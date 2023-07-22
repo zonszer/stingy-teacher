@@ -50,7 +50,7 @@ def loss_fn_kd_stingy(outputs, labels, teacher_outputs, params):
 
     # create sparse logits 
     sparse_ratio = params.sparse_ratio
-    num_keep  = int(sparse_ratio * teacher_outputs.shape[1]) 
+    num_keep  = int(sparse_ratio * teacher_outputs.shape[1])    #sparse_ratio=0.2
     value, index = torch.topk(teacher_outputs, k=num_keep, dim=1)           # keep top N logits, and zero out the rest
     # 
     teacher_outputs_sparse = torch.full(teacher_outputs.shape, float("-inf")).to(teacher_outputs.device)

@@ -15,35 +15,52 @@ from model import *
 from data_loader import fetch_dataloader
 
 
-# ************************** random seed **************************
-seed = 0
+# ************************** parameters **************************
+parser = argparse.ArgumentParser()
+parser.add_argument('--id', default='XXXX', help='name')
+parser.add_argument('--save_path', default='experiments/CIFAR10/baseline/resnet18', type=str)
+parser.add_argument('--gpu_id', default=[0], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
+# Model parameters
+parser.add_argument('--model_name', default='resnet18', type=str, help='model name')
+parser.add_argument('--resume', default='', metavar='Name/path', help='path to latest checkpoint (default: none)')
+# Training parameters
+parser.add_argument('--learning_rate', default=0.1, type=float, help='learning rate')
+parser.add_argument('--schedule', default=[80, 120], type=int, nargs='+', help='schedule')
+parser.add_argument('--gamma', default=0.1, type=float, help='gamma')
+parser.add_argument('--batch_size', default=128, type=int, help='batch size')
+parser.add_argument('--num_epochs', default=160, type=int, help='number of epochs')
+parser.add_argument('--num_workers', default=15, type=int, help='number of workers')
+parser.add_argument('--augmentation', default=1, type=int, help='augmentation')
+parser.add_argument('--seed', default=0, type=int, help='seed')
+# Dataset parameters
+parser.add_argument('--dataset', default='cifar10', type=str, help='dataset')
 
-np.random.seed(seed)
-torch.manual_seed(seed)
-torch.cuda.manual_seed_all(seed)
+parser.add_argument('--use_posion_data', action='store_true', help='dataset mode')
+parser.add_argument('--pData_path', default='XXXX', type=str, help='dataset')
+args = parser.parse_args()
+
+
+# ************************** random seed **************************
+
+
+np.random.seed(args.seed)
+torch.manual_seed(args.seed)
+torch.cuda.manual_seed_all(args.seed)
 
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
-
-# ************************** parameters **************************
-parser = argparse.ArgumentParser()
-parser.add_argument('--save_path', default='experiments/CIFAR10/baseline/resnet18', type=str)
-parser.add_argument('--resume', default=None, type=str)
-parser.add_argument('--gpu_id', default=[0], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
-args = parser.parse_args()
-
 device_ids = args.gpu_id
 torch.cuda.set_device(device_ids[0])
 
 
 # ************************** training function **************************
-def train_epoch(model, optim, loss_fn, data_loader, params):
+def train_epoch(model, optim, loss_fn, data_loader, args):
     model.train()
     loss_avg = RunningAverage()
 
     with tqdm(total=len(data_loader)) as t:  # Use tqdm for progress bar
         for i, (train_batch, labels_batch) in enumerate(data_loader):
-            if params.cuda:
+            if args.cuda:
                 train_batch = train_batch.cuda()        # (B,3,32,32)
                 labels_batch = labels_batch.cuda()      # (B,)
 
@@ -64,7 +81,7 @@ def train_epoch(model, optim, loss_fn, data_loader, params):
     return loss_avg()
 
 
-def evaluate(model, loss_fn, data_loader, params):
+def evaluate(model, loss_fn, data_loader, args):
     model.eval()
     # summary for current eval loop
     summ = []
@@ -72,7 +89,7 @@ def evaluate(model, loss_fn, data_loader, params):
     with torch.no_grad():
         # compute metrics over the dataset
         for data_batch, labels_batch in data_loader:
-            if params.cuda:
+            if args.cuda:
                 data_batch = data_batch.cuda()          # (B,3,32,32)
                 labels_batch = labels_batch.cuda()      # (B,)
 
@@ -95,24 +112,25 @@ def evaluate(model, loss_fn, data_loader, params):
     return metrics_mean
 
 
-def train_and_eval(model, optim, loss_fn, train_loader, dev_loader, params):
+def train_and_eval(model, optim, loss_fn, train_loader, dev_loader, args):
     best_val_acc = -1
     best_epo = -1
-    lr = params.learning_rate
+    lr = args.learning_rate
 
-    for epoch in range(params.num_epochs):
+    for epoch in range(args.num_epochs):
         # LR schedule *****************
-        lr = adjust_learning_rate(optim, epoch, lr, params)
+        lr = adjust_learning_rate(optim, epoch, lr, args)
 
-        logging.info("Epoch {}/{}".format(epoch + 1, params.num_epochs))
+        logging.info("Epoch {}/{}".format(epoch + 1, args.num_epochs))
         logging.info('Learning Rate {}'.format(lr))
 
         # ********************* one full pass over the training set *********************
-        train_loss = train_epoch(model, optim, loss_fn, train_loader, params)
+        train_loss = train_epoch(model, optim, loss_fn, train_loader, args)
+        # train_loss = -1
         logging.info("- Train loss : {:05.3f}".format(train_loss))
 
         # ********************* Evaluate for one epoch on validation set *********************
-        val_metrics = evaluate(model, loss_fn, dev_loader, params)     # {'acc':acc, 'loss':loss}
+        val_metrics = evaluate(model, loss_fn, dev_loader, args)     # {'acc':acc, 'loss':loss}
         metrics_string = " ; ".join("{}: {:05.3f}".format(k, v) for k, v in val_metrics.items())
         logging.info("- Eval metrics : " + metrics_string)
 
@@ -137,9 +155,9 @@ def train_and_eval(model, optim, loss_fn, train_loader, dev_loader, params):
         logging.info('- So far best epoch: {}, best acc: {:05.3f}'.format(best_epo, best_val_acc))
 
 
-def adjust_learning_rate(opt, epoch, lr, params):
-    if epoch in params.schedule:
-        lr = lr * params.gamma
+def adjust_learning_rate(opt, epoch, lr, args):
+    if epoch in args.schedule:
+        lr = lr * args.gamma
         for param_group in opt.param_groups:
             param_group['lr'] = lr
     return lr
@@ -150,83 +168,87 @@ if __name__ == "__main__":
     set_logger(os.path.join(args.save_path, 'training.log'))
 
     # #################### Load the parameters from json file #####################################
-    json_path = os.path.join(args.save_path, 'params.json')
-    assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
-    params = Params(json_path)
+    # json_path = os.path.join(args.save_path, 'params.json')
+    # assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
+    # params = Params(json_path)
 
-    params.cuda = torch.cuda.is_available() # use GPU if available
+    args.cuda = torch.cuda.is_available() # use GPU if available
+    torch.set_default_dtype(torch.float64)
 
-    for k, v in params.__dict__.items():
+    for k, v in args.__dict__.items():
         logging.info('{}:{}'.format(k, v))
 
     # ########################################## Dataset ##########################################
-    trainloader = fetch_dataloader('train', params)
-    devloader = fetch_dataloader('dev', params)
-
+    if args.use_posion_data:
+        trainloader, devloader = fetch_dataloader('posion_data', args)
+        logging.info('--use_posion_data!')
+    else:
+        trainloader, devloader = fetch_dataloader('clean_data', args)
+        logging.info('use clean dataset!')
     # ############################################ Model ############################################
-    if params.dataset == 'cifar10':
+    if args.dataset == 'cifar10':
         num_class = 10
-    elif params.dataset == 'cifar100':
+    elif args.dataset == 'cifar100':
         num_class = 100
-    elif params.dataset == 'tiny_imagenet':
+    elif args.dataset == 'tiny_imagenet':
         num_class = 200
     else:
         num_class = 10
 
     logging.info('Number of class: ' + str(num_class))
-    logging.info('Create Model --- ' + params.model_name)
+    logging.info('Create Model --- ' + args.model_name)
 
     # ResNet 18 / 34 / 50 ****************************************
-    if params.model_name == 'resnet18':
+    if args.model_name == 'resnet18':
         model = ResNet18(num_class=num_class)
-    elif params.model_name == 'resnet34':
+    elif args.model_name == 'resnet34':
         model = ResNet34(num_class=num_class)
-    elif params.model_name == 'resnet50':
+    elif args.model_name == 'resnet50':
         model = ResNet50(num_class=num_class)
 
     # PreResNet(ResNet for CIFAR-10)  20/32/56/110 ***************
-    elif params.model_name.startswith('preresnet20'):
+    elif args.model_name.startswith('preresnet20'):
         model = PreResNet(depth=20, num_classes=num_class)
-    elif params.model_name.startswith('preresnet32'):
+    elif args.model_name.startswith('preresnet32'):
         model = PreResNet(depth=32, num_classes=num_class)
-    elif params.model_name.startswith('preresnet44'):
+    elif args.model_name.startswith('preresnet44'):
         model = PreResNet(depth=44, num_classes=num_class)
-    elif params.model_name.startswith('preresnet56'):
+    elif args.model_name.startswith('preresnet56'):
         model = PreResNet(depth=56, num_classes=num_class)
-    elif params.model_name.startswith('preresnet110'):
+    elif args.model_name.startswith('preresnet110'):
         model = PreResNet(depth=110, num_classes=num_class)
 
     # DenseNet *********************************************
-    elif params.model_name == 'densenet121':
+    elif args.model_name == 'densenet121':
         model = densenet121(num_class=num_class)
-    elif params.model_name == 'densenet161':
+    elif args.model_name == 'densenet161':
         model = densenet161(num_class=num_class)
-    elif params.model_name == 'densenet169':
+    elif args.model_name == 'densenet169':
         model = densenet169(num_class=num_class)
 
     # ResNeXt *********************************************
-    elif params.model_name == 'resnext29':
+    elif args.model_name == 'resnext29':
         model = CifarResNeXt(cardinality=8, depth=29, num_classes=num_class)
 
-    elif params.model_name == 'mobilenetv2':
+    elif args.model_name == 'mobilenetv2':
         model = MobileNetV2(class_num=num_class)
 
-    elif params.model_name == 'shufflenetv2':
+    elif args.model_name == 'shufflenetv2':
         model = shufflenetv2(class_num=num_class)
 
     # Basic neural network ********************************
-    elif params.model_name == 'net':
-        model = Net(num_class, params)
+    elif args.model_name == 'net':
+        model = Net(num_class, args)
 
-    elif params.model_name == 'mlp':
+    elif args.model_name == 'mlp':
         model = MLP(num_class=num_class)
 
     else:
         model = None
-        print('Not support for model ' + str(params.model_name))
+        print('Not support for model ' + str(args.model_name))
         exit()
 
-    if params.cuda:
+    if args.cuda:
         model = model.cuda()
 
     if len(args.gpu_id) > 1:
@@ -241,17 +263,17 @@ if __name__ == "__main__":
         logging.info('- Train from scratch ')
 
     # ############################### Optimizer ###############################
-    if params.model_name == 'net' or params.model_name == 'mlp':
-        optimizer = Adam(model.parameters(), lr=params.learning_rate)
+    if args.model_name == 'net' or args.model_name == 'mlp':
+        optimizer = Adam(model.parameters(), lr=args.learning_rate)
         logging.info('Optimizer: Adam')
     else:
-        optimizer = SGD(model.parameters(), lr=params.learning_rate, momentum=0.9, weight_decay=5e-4)
+        optimizer = SGD(model.parameters(), lr=args.learning_rate, momentum=0.9, weight_decay=5e-4)
         logging.info('Optimizer: SGD')
 
     # ************************** LOSS **************************
     criterion = nn.CrossEntropyLoss()
 
     # ################################# train and evaluate #################################
-    train_and_eval(model, optimizer, criterion, trainloader, devloader, params)
+    train_and_eval(model, optimizer, criterion, trainloader, devloader, args)
 
 
