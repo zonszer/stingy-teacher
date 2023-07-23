@@ -1,0 +1,71 @@
+2023-07-23 10:39:54,676:INFO: id:test_pData_scratch
+2023-07-23 10:39:54,677:INFO: save_path:experiments/CIFAR10/baseline/resnet18_4visLogits
+2023-07-23 10:39:54,677:INFO: gpu_id:[0]
+2023-07-23 10:39:54,677:INFO: model_name:resnet18
+2023-07-23 10:39:54,677:INFO: resume:experiments/CIFAR10/baseline/resnet18_pData/best_model.pth
+2023-07-23 10:39:54,678:INFO: learning_rate:0.1
+2023-07-23 10:39:54,678:INFO: schedule:[80, 120]
+2023-07-23 10:39:54,678:INFO: gamma:0.1
+2023-07-23 10:39:54,678:INFO: batch_size:128
+2023-07-23 10:39:54,678:INFO: num_epochs:160
+2023-07-23 10:39:54,678:INFO: num_workers:15
+2023-07-23 10:39:54,679:INFO: augmentation:1
+2023-07-23 10:39:54,679:INFO: seed:0
+2023-07-23 10:39:54,679:INFO: dataset:cifar10
+2023-07-23 10:39:54,679:INFO: use_posion_data:True
+2023-07-23 10:39:54,679:INFO: pData_path:/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy
+2023-07-23 10:39:54,679:INFO: cuda:True
+2023-07-23 10:39:58,178:INFO: --use_posion_data!
+2023-07-23 10:39:58,178:INFO: Number of class: 10
+2023-07-23 10:39:58,178:INFO: Create Model --- resnet18
+2023-07-23 10:40:04,053:INFO: - Load checkpoint model from experiments/CIFAR10/baseline/resnet18_pData/best_model.pth
+2023-07-23 10:41:03,089:INFO: id:test_pData_scratch
+2023-07-23 10:41:03,090:INFO: save_path:experiments/CIFAR10/baseline/resnet18_4visLogits
+2023-07-23 10:41:03,090:INFO: gpu_id:[0]
+2023-07-23 10:41:03,090:INFO: model_name:resnet18
+2023-07-23 10:41:03,090:INFO: resume:experiments/CIFAR10/baseline/resnet18_pData/best_model.tar
+2023-07-23 10:41:03,091:INFO: learning_rate:0.1
+2023-07-23 10:41:03,091:INFO: schedule:[80, 120]
+2023-07-23 10:41:03,091:INFO: gamma:0.1
+2023-07-23 10:41:03,091:INFO: batch_size:128
+2023-07-23 10:41:03,091:INFO: num_epochs:160
+2023-07-23 10:41:03,091:INFO: num_workers:15
+2023-07-23 10:41:03,091:INFO: augmentation:1
+2023-07-23 10:41:03,092:INFO: seed:0
+2023-07-23 10:41:03,092:INFO: dataset:cifar10
+2023-07-23 10:41:03,092:INFO: use_posion_data:True
+2023-07-23 10:41:03,092:INFO: pData_path:/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy
+2023-07-23 10:41:03,092:INFO: cuda:True
+2023-07-23 10:41:05,222:INFO: --use_posion_data!
+2023-07-23 10:41:05,222:INFO: Number of class: 10
+2023-07-23 10:41:05,222:INFO: Create Model --- resnet18
+2023-07-23 10:41:10,451:INFO: - Load checkpoint model from experiments/CIFAR10/baseline/resnet18_pData/best_model.tar
+2023-07-23 10:41:10,599:INFO: Optimizer: SGD
+2023-07-23 10:41:10,600:INFO: Epoch 1/160
+2023-07-23 10:41:10,600:INFO: Learning Rate 0.1
+2023-07-23 10:41:10,600:INFO: - Train loss : -1.000
+2023-07-23 10:48:52,163:INFO: id:test_pData_scratch
+2023-07-23 10:48:52,164:INFO: save_path:experiments/CIFAR10/baseline/resnet18_4visLogits
+2023-07-23 10:48:52,164:INFO: gpu_id:[0]
+2023-07-23 10:48:52,165:INFO: model_name:resnet18
+2023-07-23 10:48:52,165:INFO: resume:experiments/CIFAR10/baseline/resnet18/best_model.tar
+2023-07-23 10:48:52,165:INFO: learning_rate:0.1
+2023-07-23 10:48:52,166:INFO: schedule:[80, 120]
+2023-07-23 10:48:52,166:INFO: gamma:0.1
+2023-07-23 10:48:52,166:INFO: batch_size:128
+2023-07-23 10:48:52,166:INFO: num_epochs:160
+2023-07-23 10:48:52,167:INFO: num_workers:15
+2023-07-23 10:48:52,167:INFO: augmentation:1
+2023-07-23 10:48:52,167:INFO: seed:0
+2023-07-23 10:48:52,167:INFO: dataset:cifar10
+2023-07-23 10:48:52,168:INFO: use_posion_data:True
+2023-07-23 10:48:52,168:INFO: pData_path:/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy
+2023-07-23 10:48:52,168:INFO: cuda:True
+2023-07-23 10:48:53,817:INFO: --use_posion_data!
+2023-07-23 10:48:53,817:INFO: Number of class: 10
+2023-07-23 10:48:53,817:INFO: Create Model --- resnet18
+2023-07-23 10:48:59,140:INFO: - Load checkpoint model from experiments/CIFAR10/baseline/resnet18/best_model.tar
+2023-07-23 10:48:59,708:INFO: Optimizer: SGD
+2023-07-23 10:48:59,708:INFO: Epoch 1/160
+2023-07-23 10:48:59,708:INFO: Learning Rate 0.1
+2023-07-23 10:48:59,709:INFO: - Train loss : -1.000

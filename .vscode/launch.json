@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
       {
-        "name": "train_nasty.py",
+        "name": "0.train_nasty.py",
         "justMyCode": false, 
         "type": "python",
         "request": "launch",
@@ -15,38 +15,9 @@
         "env": {"PYTHONPATH": "${workspaceFolder}/libs/"}
       },
 
-      {
-        "name": "train_nasty-plotlogits.py",
-        "justMyCode": false, 
-        "type": "python",
-        "request": "launch",
-        "python": "python",
-        "args": [
-          "--save_path=experiments/CIFAR10/kd_nasty_resnet18/nasty_resnet18_4visLogits",
-          "--resume=experiments/CIFAR10/kd_nasty_resnet18/preresnet20_1/NT_fromDataset2_resnet18_T.pth",
-        ],      
-        "program": "train_nasty.py",
-        "console": "integratedTerminal",
-        "env": {"PYTHONPATH": "${workspaceFolder}/libs/"}
-      },
 
       {
-        "name": "train_nasty_resume4plot.py",
-        "justMyCode": false, 
-        "type": "python",
-        "request": "launch",
-        "python": "python",
-        "args": [
-          "--save_path=experiments/CIFAR10/kd_nasty_resnet18/nasty_resnet18",
-          "--resume=experiments/CIFAR10/kd_nasty_resnet18/nasty_resnet18/best_model.tar",
-        ],      
-        "program": "train_nasty.py",
-        "console": "integratedTerminal",
-        "env": {"PYTHONPATH": "${workspaceFolder}/libs/"}
-      },
-
-      {
-        "name": "train_kd.py",
+        "name": "0.train_kd.py",
         "justMyCode": false, 
         "type": "python",
         "request": "launch",
@@ -60,7 +31,7 @@
       },
 
       {
-        "name": "train_kd_4test-pDataKD.py",
+        "name": "2.train_kd_4test-pDataKD.py",
         "justMyCode": false,
         "type": "python",
         "request": "launch",
@@ -75,6 +46,49 @@
         }
       },
     
+      {
+        "name": "1.train_scratch-plotlogits.py",
+        "justMyCode": false, 
+        "type": "python",
+        "request": "launch",
+        "python": "python",
+        "args": [
+          "--save_path=experiments/CIFAR10/baseline/resnet18_4visLogits",
+          "--resume=experiments/CIFAR10/baseline/resnet18/best_model.tar",
+
+          
+          "--id=test_pData_scratch",
+          "--model_name=resnet18",
+          "--learning_rate=0.1",
+          "--gamma=0.1",
+          "--batch_size=128",
+          "--num_epochs=160",
+          "--num_workers=15",
+          "--augmentation=1",
+          "--seed=0",
+          "--dataset=cifar10",
+          "--use_posion_data",
+          "--pData_path=/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy",
+        ],      
+        "program": "train_scratch.py",
+        "console": "integratedTerminal",
+        "env": {"PYTHONPATH": "${workspaceFolder}/libs/"}
+      },
+
+      {
+        "name": "train_kd-resume4plot.py",
+        "justMyCode": false, 
+        "type": "python",
+        "request": "launch",
+        "python": "python",
+        "args": [
+          "--save_path=experiments/CIFAR10/kd_nasty_resnet18/nasty_resnet18",
+          "--resume=experiments/CIFAR10/kd_nasty_resnet18/nasty_resnet18/best_model.tar",
+        ],      
+        "program": "train_kd.py",
+        "console": "integratedTerminal",
+        "env": {"PYTHONPATH": "${workspaceFolder}/libs/"}
+      },
 
       {
         "name": "train_scratch_pData.py",
@@ -95,7 +109,7 @@
             "--seed=0",
             "--dataset=cifar10",
             "--use_posion_data",
-            "--pData_path=/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy"
+            "--pData_path=/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy",
         ],
         "program": "train_scratch.py",
         "console": "integratedTerminal",

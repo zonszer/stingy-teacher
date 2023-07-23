@@ -1,0 +1,65 @@
+2023-07-22 15:54:15,899:INFO: id:XXXX
+2023-07-22 15:54:15,899:INFO: save_path:experiments/CIFAR10/baseline/resnet18
+2023-07-22 15:54:15,899:INFO: gpu_id:[0]
+2023-07-22 15:54:15,899:INFO: model_name:resnet18
+2023-07-22 15:54:15,899:INFO: resume:
+2023-07-22 15:54:15,899:INFO: learning_rate:0.1
+2023-07-22 15:54:15,900:INFO: schedule:[80, 120]
+2023-07-22 15:54:15,900:INFO: gamma:0.1
+2023-07-22 15:54:15,900:INFO: batch_size:128
+2023-07-22 15:54:15,900:INFO: num_epochs:160
+2023-07-22 15:54:15,900:INFO: num_workers:15
+2023-07-22 15:54:15,900:INFO: augmentation:1
+2023-07-22 15:54:15,900:INFO: cuda:True
+2023-07-22 15:54:15,900:INFO: seed:0
+2023-07-22 15:54:15,900:INFO: dataset:cifar10
+2023-07-22 15:54:15,900:INFO: use_posion_data:False
+2023-07-22 15:54:15,901:INFO: pData_path:XXXX
+2023-07-22 15:54:17,773:INFO: Number of class: 10
+2023-07-22 15:54:17,773:INFO: Create Model --- resnet18
+2023-07-22 15:54:21,364:INFO: - Train from scratch 
+2023-07-22 15:54:21,366:INFO: Optimizer: SGD
+2023-07-22 15:54:21,366:INFO: Epoch 1/160
+2023-07-22 15:54:21,366:INFO: Learning Rate 0.1
+2023-07-22 16:48:11,849:INFO: id:test_cData_scratch
+2023-07-22 16:48:11,849:INFO: save_path:experiments/CIFAR10/baseline/resnet18
+2023-07-22 16:48:11,849:INFO: gpu_id:[0]
+2023-07-22 16:48:11,849:INFO: model_name:resnet18
+2023-07-22 16:48:11,850:INFO: resume:
+2023-07-22 16:48:11,850:INFO: learning_rate:0.1
+2023-07-22 16:48:11,850:INFO: schedule:[80, 120]
+2023-07-22 16:48:11,850:INFO: gamma:0.1
+2023-07-22 16:48:11,850:INFO: batch_size:128
+2023-07-22 16:48:11,850:INFO: num_epochs:160
+2023-07-22 16:48:11,850:INFO: num_workers:15
+2023-07-22 16:48:11,850:INFO: augmentation:1
+2023-07-22 16:48:11,850:INFO: cuda:True
+2023-07-22 16:48:11,850:INFO: seed:0
+2023-07-22 16:48:11,851:INFO: dataset:cifar10
+2023-07-22 16:48:11,851:INFO: use_posion_data:False
+2023-07-22 16:48:11,851:INFO: pData_path:XXXX
+2023-07-22 16:48:13,858:INFO: Number of class: 10
+2023-07-22 16:48:13,858:INFO: Create Model --- resnet18
+2023-07-22 16:48:17,145:INFO: - Train from scratch 
+2023-07-22 16:48:17,150:INFO: Optimizer: SGD
+2023-07-22 16:48:17,151:INFO: Epoch 1/160
+2023-07-22 16:48:17,151:INFO: Learning Rate 0.1
+2023-07-22 17:06:43,049:INFO: id:test_cData_scratch
+2023-07-22 17:06:43,050:INFO: save_path:experiments/CIFAR10/baseline/resnet18
+2023-07-22 17:06:43,050:INFO: gpu_id:[0]
+2023-07-22 17:06:43,050:INFO: model_name:resnet18
+2023-07-22 17:06:43,050:INFO: resume:
+2023-07-22 17:06:43,050:INFO: learning_rate:0.1
+2023-07-22 17:06:43,050:INFO: schedule:[80, 120]
+2023-07-22 17:06:43,050:INFO: gamma:0.1
+2023-07-22 17:06:43,051:INFO: batch_size:128
+2023-07-22 17:06:43,051:INFO: num_epochs:160
+2023-07-22 17:06:43,051:INFO: num_workers:15
+2023-07-22 17:06:43,051:INFO: augmentation:1
+2023-07-22 17:06:43,051:INFO: cuda:True
+2023-07-22 17:06:43,051:INFO: seed:0
+2023-07-22 17:06:43,051:INFO: dataset:cifar10
+2023-07-22 17:06:43,051:INFO: use_posion_data:False
+2023-07-22 17:06:43,051:INFO: pData_path:XXXX
+2023-07-22 17:06:44,751:INFO: Number of class: 10
+2023-07-22 17:06:44,751:INFO: Create Model --- resnet18

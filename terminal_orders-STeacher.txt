@@ -6,3 +6,8 @@ python -utt train_scratch.py --id=test_pData_scratch --save_path=experiments/CIF
 -------clean Data：
 python -utt train_scratch.py --id=test_cData_scratch --save_path=experiments/CIFAR10/baseline/resnet18 --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 
 
+
+
+===================train_kd
+python -utt train_kd.py --save_path=experiments/CIFAR10/kd_pData_resnet18/resnet18
+

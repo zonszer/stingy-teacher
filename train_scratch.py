@@ -13,6 +13,7 @@ import numpy as np
 from utils.utils import RunningAverage, set_logger, Params
 from model import *
 from data_loader import fetch_dataloader
+from cam_Vis import *
 
 
 # ************************** parameters **************************
@@ -96,6 +97,9 @@ def evaluate(model, loss_fn, data_loader, args):
             # compute model output
             output_batch = model(data_batch)
             loss = loss_fn(output_batch, labels_batch)
+            # # **************************please give the code for ploting nasty teacher logits distbution **************************
+            # plot_logitsDistri(output_batch, labels_batch)
+            # vis_featureMaps(t_model, train_batch, labels_batch)
 
             # extract data from torch Variable, move to cpu, convert to numpy arrays
             output_batch = output_batch.cpu().numpy()
@@ -127,6 +131,7 @@ def train_and_eval(model, optim, loss_fn, train_loader, dev_loader, args):
         # ********************* one full pass over the training set *********************
         train_loss = train_epoch(model, optim, loss_fn, train_loader, args)
         # train_loss = -1
+        
         logging.info("- Train loss : {:05.3f}".format(train_loss))
 
         # ********************* Evaluate for one epoch on validation set *********************

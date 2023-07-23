@@ -1,0 +1,50 @@
+2023-07-18 22:28:08,728:INFO: model_name:shufflenetv2
+2023-07-18 22:28:08,729:INFO: learning_rate:0.1
+2023-07-18 22:28:08,729:INFO: schedule:[60, 120, 160]
+2023-07-18 22:28:08,729:INFO: gamma:0.2
+2023-07-18 22:28:08,729:INFO: batch_size:128
+2023-07-18 22:28:08,729:INFO: num_epochs:200
+2023-07-18 22:28:08,729:INFO: num_workers:4
+2023-07-18 22:28:08,729:INFO: augmentation:1
+2023-07-18 22:28:08,729:INFO: cuda:True
+2023-07-18 22:28:08,729:INFO: dataset:cifar100
+2023-07-18 22:28:08,729:INFO: teacher_model:resnet18
+2023-07-18 22:28:08,729:INFO: teacher_resume:experiments/CIFAR100/baseline/resnet18/best_model.tar
+2023-07-18 22:28:08,729:INFO: temperature:20
+2023-07-18 22:28:08,729:INFO: alpha:0.9
+2023-07-18 22:28:08,729:INFO: sparse_ratio:0.1
+2023-07-18 22:30:03,540:INFO: model_name:shufflenetv2
+2023-07-18 22:30:03,540:INFO: learning_rate:0.1
+2023-07-18 22:30:03,540:INFO: schedule:[60, 120, 160]
+2023-07-18 22:30:03,540:INFO: gamma:0.2
+2023-07-18 22:30:03,540:INFO: batch_size:128
+2023-07-18 22:30:03,540:INFO: num_epochs:200
+2023-07-18 22:30:03,540:INFO: num_workers:4
+2023-07-18 22:30:03,540:INFO: augmentation:1
+2023-07-18 22:30:03,540:INFO: cuda:True
+2023-07-18 22:30:03,540:INFO: dataset:cifar100
+2023-07-18 22:30:03,540:INFO: teacher_model:resnet18
+2023-07-18 22:30:03,540:INFO: teacher_resume:experiments/CIFAR100/baseline/resnet18/best_model.tar
+2023-07-18 22:30:03,540:INFO: temperature:20
+2023-07-18 22:30:03,540:INFO: alpha:0.9
+2023-07-18 22:30:03,541:INFO: sparse_ratio:0.1
+2023-07-18 22:30:33,560:INFO: model_name:shufflenetv2
+2023-07-18 22:30:33,561:INFO: learning_rate:0.1
+2023-07-18 22:30:33,561:INFO: schedule:[60, 120, 160]
+2023-07-18 22:30:33,561:INFO: gamma:0.2
+2023-07-18 22:30:33,561:INFO: batch_size:128
+2023-07-18 22:30:33,561:INFO: num_epochs:200
+2023-07-18 22:30:33,561:INFO: num_workers:4
+2023-07-18 22:30:33,561:INFO: augmentation:1
+2023-07-18 22:30:33,561:INFO: cuda:True
+2023-07-18 22:30:33,561:INFO: dataset:cifar100
+2023-07-18 22:30:33,561:INFO: teacher_model:resnet18
+2023-07-18 22:30:33,561:INFO: teacher_resume:experiments/CIFAR100/baseline/resnet18/best_model.tar
+2023-07-18 22:30:33,561:INFO: temperature:20
+2023-07-18 22:30:33,561:INFO: alpha:0.9
+2023-07-18 22:30:33,561:INFO: sparse_ratio:0.1
+2023-07-18 22:30:37,486:INFO: Number of class: 100
+2023-07-18 22:30:37,486:INFO: Create Student Model --- shufflenetv2
+2023-07-18 22:30:37,508:INFO: Create Teacher Model --- resnet18
+2023-07-18 22:30:40,778:INFO: - Train from scratch 
+2023-07-18 22:30:40,778:INFO: - Load Trained teacher model from experiments/CIFAR100/baseline/resnet18/best_model.tar

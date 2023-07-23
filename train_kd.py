@@ -15,6 +15,7 @@ import numpy as np
 from utils.utils import RunningAverage, set_logger, Params
 from model import *
 from data_loader import fetch_dataloader
+from cam_Vis import *
 
 
 # ************************** random seed **************************
@@ -73,7 +74,9 @@ def train_epoch_kd(model, t_model, optim, loss_fn_kd, data_loader, params):
             # get one batch output from teacher_outputs list
             with torch.no_grad():
                 output_teacher_batch = t_model(train_batch)   # logit without SoftMax
-
+                # # **************************please give the code for ploting nasty teacher logits distbution **************************
+                # plot_logitsDistri(output_teacher_batch, labels_batch)
+                # vis_featureMaps(t_model, train_batch, labels_batch)
             # CE(output, label) + KLdiv(output, teach_out)
             loss = loss_fn_kd(output_batch, labels_batch, output_teacher_batch, params)
 
@@ -187,10 +190,10 @@ if __name__ == "__main__":
 
     # ########################################## Dataset ##########################################
     if args.use_posion_data:
-        trainloader, devloader = fetch_dataloader('posion_data', args)
+        trainloader, devloader = fetch_dataloader('posion_data', params)
         logging.info('--use_posion_data!')
     else:
-        trainloader, devloader = fetch_dataloader('clean_data', args)
+        trainloader, devloader = fetch_dataloader('clean_data', params)
         logging.info('use clean dataset!')
 
     # ############################################ Model ############################################
@@ -328,8 +331,10 @@ if __name__ == "__main__":
         teacher_resume = params.teacher_resume
     logging.info('- Load Trained teacher model from {}'.format(teacher_resume))
     checkpoint = torch.load(teacher_resume)
-    teacher_model.load_state_dict(checkpoint['state_dict'])
-
+    try:
+        teacher_model.load_state_dict(checkpoint['state_dict'], strict=True)
+    except KeyError:
+        teacher_model.load_state_dict(checkpoint['model'], strict=True)
     # ############################### Optimizer ###############################
     if params.model_name == 'net' or params.model_name == 'mlp':
         optimizer = Adam(model.parameters(), lr=params.learning_rate)
