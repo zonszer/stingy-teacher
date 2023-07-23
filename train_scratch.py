@@ -20,7 +20,7 @@ from cam_Vis import *
 parser = argparse.ArgumentParser()
 parser.add_argument('--id', default='XXXX', help='name')
 parser.add_argument('--save_path', default='experiments/CIFAR10/baseline/resnet18', type=str)
-parser.add_argument('--gpu_id', default=[0], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
+parser.add_argument('--gpu_id', default=[2], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
 # Model parameters
 parser.add_argument('--model_name', default='resnet18', type=str, help='model name')
 parser.add_argument('--resume', default='', metavar='Name/path', help='path to latest checkpoint (default: none)')
@@ -178,7 +178,7 @@ if __name__ == "__main__":
     # params = Params(json_path)
 
     args.cuda = torch.cuda.is_available() # use GPU if available
-    torch.set_default_dtype(torch.float64)
+    # torch.set_default_dtype(torch.float64)
 
     for k, v in args.__dict__.items():
         logging.info('{}:{}'.format(k, v))
