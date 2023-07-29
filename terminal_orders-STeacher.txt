@@ -3,11 +3,25 @@
 -------pData：
 python -utt train_scratch.py --id=test_pData_scratch --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy  (test ST pData
 
-python -utt train_scratch.py --id=test_pData_scratch-NT --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps06.npy  (test NT pData
+python -utt train_scratch.py --id=pData_scratch-NT1 --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps06.npy  (test NT pData
+
+python -utt train_scratch.py --id=pData_scratch-NT1 --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps06.npy
+
+python -utt train_scratch.py --id=pData_scratch-ST1 --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter200-inf.npy
+
+-----------------new data spilit:7.29
+python -utt train_scratch.py --id=pData_scratch-ST2 --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-inf1.npy
+
+
+python -utt train_scratch.py --id=pData_scratch-testClean --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy (TODO: test original data:
+
+python -utt train_scratch.py --id=pData_scratch-ST00 --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-inf.npy (TODO: test STinf pData without cycle 
+
+
+python -utt train_scratch.py --id=pData_scratch-NT1 --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataNT-eps03-iter20-inf1.npy (TODO: test nasty teacher inf1  
 
 -------clean Data：
 python -utt train_scratch.py --id=test_cData_scratch --save_path=experiments/CIFAR10/baseline/resnet18 --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 
-
 
 
 ===================train_kd

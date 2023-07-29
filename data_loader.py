@@ -10,7 +10,6 @@ import torchvision.transforms as transforms
 from torch.utils.data.sampler import SubsetRandomSampler
 from torch.utils.data import Dataset
 
-
 class inv_transform(object):
     def __call__(self, t):
         """
@@ -53,6 +52,26 @@ class Cifar10Dataset(Dataset):
         # Convert to Tensor
         self.data = torch.from_numpy(self.data)
         self.targets = torch.from_numpy(self.targets).long()
+        self.transform = transform
+
+    def __getitem__(self, index):
+        x = self.data[index]
+        y = self.targets[index]
+        if self.transform:
+            # Converts the data from numpy to torch tensor
+            x = self.transform(x)
+        return x, y
+
+    def __len__(self):
+        return len(self.data)
+
+class Cifar10Dataset_img(Dataset):
+    def __init__(self, x_path, y_path=None, transform=None):
+        super().__init__()
+        if y_path == None:
+            y_path = generate_path_replace(x_path)
+        self.data = np.load(x_path)
+        self.targets = np.load(y_path)
         self.transform = transform
 
     def __getitem__(self, index):

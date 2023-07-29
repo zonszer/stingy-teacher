@@ -35,7 +35,7 @@ parser.add_argument('--save_path', default='experiments/CIFAR10/kd_normal/cnn', 
 parser.add_argument('--teacher_resume', default=None, type=str,
                     help='If you specify the teacher resume here, we will use it instead of parameters from json file')
 parser.add_argument('--resume', default=None, type=str)
-parser.add_argument('--gpu_id', default=[0], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
+parser.add_argument('--gpu_id', default=[2], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
 parser.add_argument('--use_posion_data', action='store_true', help='dataset mode')
 args = parser.parse_args()
 
