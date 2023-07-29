@@ -20,7 +20,7 @@ from cam_Vis import *
 parser = argparse.ArgumentParser()
 parser.add_argument('--id', default='XXXX', help='name')
 parser.add_argument('--save_path', default='experiments/CIFAR10/baseline/resnet18', type=str)
-parser.add_argument('--gpu_id', default=[2], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
+parser.add_argument('--gpu_id', default=[0], type=int, nargs='+', help='id(s) for CUDA_VISIBLE_DEVICES')
 # Model parameters
 parser.add_argument('--model_name', default='resnet18', type=str, help='model name')
 parser.add_argument('--resume', default='', metavar='Name/path', help='path to latest checkpoint (default: none)')

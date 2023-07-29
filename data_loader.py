@@ -9,6 +9,8 @@ import torchvision
 import torchvision.transforms as transforms
 from torch.utils.data.sampler import SubsetRandomSampler
 from torch.utils.data import Dataset
+from PIL import Image
+
 
 class inv_transform(object):
     def __call__(self, t):
@@ -75,12 +77,13 @@ class Cifar10Dataset_img(Dataset):
         self.transform = transform
 
     def __getitem__(self, index):
-        x = self.data[index]
+        img = self.data[index]
         y = self.targets[index]
+        img = Image.fromarray(img)
         if self.transform:
             # Converts the data from numpy to torch tensor
-            x = self.transform(x)
-        return x, y
+            img = self.transform(img)
+        return img, y
 
     def __len__(self):
         return len(self.data)
@@ -152,9 +155,9 @@ def fetch_dataloader(mode='clean_data', params=None):
     else:
         assert mode == 'posion_data'
         assert params.dataset == 'cifar10'
-        train_transformer = transforms.Compose([
-            transforms.Normalize(mean, std)])
-        trainset = Cifar10Dataset(x_path=params.pData_path, transform=train_transformer)
+        # train_transformer = transforms.Compose([
+        #     transforms.Normalize(mean, std)])
+        trainset = Cifar10Dataset_img(x_path=params.pData_path, transform=train_transformer)
         devset = torchvision.datasets.CIFAR10(root=CIFAR10_path,
                                               train=False,
                                               download=True, transform=dev_transformer)

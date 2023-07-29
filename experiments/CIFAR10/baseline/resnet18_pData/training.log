@@ -6881,3 +6881,115 @@
 2023-07-29 16:35:35,771:INFO: - Train loss : 0.002
 2023-07-29 16:35:39,359:INFO: - Eval metrics : acc: 25.247 ; loss: 2.259
 2023-07-29 16:35:40,448:INFO: - So far best epoch: 1, best acc: 26.493
+2023-07-29 19:46:39,973:INFO: id:debug-testClean1
+2023-07-29 19:46:39,973:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-07-29 19:46:39,973:INFO: gpu_id:[2]
+2023-07-29 19:46:39,974:INFO: model_name:resnet18
+2023-07-29 19:46:39,974:INFO: resume:
+2023-07-29 19:46:39,974:INFO: learning_rate:0.1
+2023-07-29 19:46:39,974:INFO: schedule:[80, 120]
+2023-07-29 19:46:39,974:INFO: gamma:0.1
+2023-07-29 19:46:39,975:INFO: batch_size:128
+2023-07-29 19:46:39,975:INFO: num_epochs:160
+2023-07-29 19:46:39,975:INFO: num_workers:15
+2023-07-29 19:46:39,975:INFO: augmentation:1
+2023-07-29 19:46:39,975:INFO: seed:0
+2023-07-29 19:46:39,975:INFO: dataset:cifar10
+2023-07-29 19:46:39,976:INFO: use_posion_data:True
+2023-07-29 19:46:39,976:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
+2023-07-29 19:46:39,976:INFO: cuda:True
+2023-07-29 19:46:41,123:INFO: --use_posion_data!
+2023-07-29 19:46:41,123:INFO: Number of class: 10
+2023-07-29 19:46:41,124:INFO: Create Model --- resnet18
+2023-07-29 19:47:33,251:INFO: id:debug-testClean1
+2023-07-29 19:47:33,253:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-07-29 19:47:33,253:INFO: gpu_id:[0]
+2023-07-29 19:47:33,254:INFO: model_name:resnet18
+2023-07-29 19:47:33,255:INFO: resume:
+2023-07-29 19:47:33,255:INFO: learning_rate:0.1
+2023-07-29 19:47:33,256:INFO: schedule:[80, 120]
+2023-07-29 19:47:33,256:INFO: gamma:0.1
+2023-07-29 19:47:33,257:INFO: batch_size:128
+2023-07-29 19:47:33,258:INFO: num_epochs:160
+2023-07-29 19:47:33,259:INFO: num_workers:15
+2023-07-29 19:47:33,259:INFO: augmentation:1
+2023-07-29 19:47:33,260:INFO: seed:0
+2023-07-29 19:47:33,261:INFO: dataset:cifar10
+2023-07-29 19:47:33,262:INFO: use_posion_data:True
+2023-07-29 19:47:33,262:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
+2023-07-29 19:47:33,263:INFO: cuda:True
+2023-07-29 19:47:34,423:INFO: --use_posion_data!
+2023-07-29 19:47:34,423:INFO: Number of class: 10
+2023-07-29 19:47:34,424:INFO: Create Model --- resnet18
+2023-07-29 19:47:53,419:INFO: - Train from scratch 
+2023-07-29 19:47:53,427:INFO: Optimizer: SGD
+2023-07-29 19:47:53,428:INFO: Epoch 1/160
+2023-07-29 19:47:53,429:INFO: Learning Rate 0.1
+2023-07-29 20:19:58,714:INFO: id:debug-testClean1
+2023-07-29 20:19:58,715:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-07-29 20:19:58,715:INFO: gpu_id:[0]
+2023-07-29 20:19:58,715:INFO: model_name:resnet18
+2023-07-29 20:19:58,716:INFO: resume:
+2023-07-29 20:19:58,716:INFO: learning_rate:0.1
+2023-07-29 20:19:58,716:INFO: schedule:[80, 120]
+2023-07-29 20:19:58,716:INFO: gamma:0.1
+2023-07-29 20:19:58,717:INFO: batch_size:128
+2023-07-29 20:19:58,717:INFO: num_epochs:160
+2023-07-29 20:19:58,717:INFO: num_workers:15
+2023-07-29 20:19:58,718:INFO: augmentation:1
+2023-07-29 20:19:58,718:INFO: seed:0
+2023-07-29 20:19:58,718:INFO: dataset:cifar10
+2023-07-29 20:19:58,719:INFO: use_posion_data:True
+2023-07-29 20:19:58,719:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
+2023-07-29 20:19:58,721:INFO: cuda:True
+2023-07-29 20:19:59,847:INFO: --use_posion_data!
+2023-07-29 20:19:59,848:INFO: Number of class: 10
+2023-07-29 20:19:59,848:INFO: Create Model --- resnet18
+2023-07-29 20:20:20,866:INFO: id:debug-testClean1
+2023-07-29 20:20:20,867:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-07-29 20:20:20,867:INFO: gpu_id:[0]
+2023-07-29 20:20:20,867:INFO: model_name:resnet18
+2023-07-29 20:20:20,867:INFO: resume:
+2023-07-29 20:20:20,868:INFO: learning_rate:0.1
+2023-07-29 20:20:20,868:INFO: schedule:[80, 120]
+2023-07-29 20:20:20,868:INFO: gamma:0.1
+2023-07-29 20:20:20,868:INFO: batch_size:128
+2023-07-29 20:20:20,869:INFO: num_epochs:160
+2023-07-29 20:20:20,869:INFO: num_workers:15
+2023-07-29 20:20:20,869:INFO: augmentation:1
+2023-07-29 20:20:20,869:INFO: seed:0
+2023-07-29 20:20:20,869:INFO: dataset:cifar10
+2023-07-29 20:20:20,870:INFO: use_posion_data:True
+2023-07-29 20:20:20,870:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
+2023-07-29 20:20:20,870:INFO: cuda:True
+2023-07-29 20:20:21,947:INFO: --use_posion_data!
+2023-07-29 20:20:21,948:INFO: Number of class: 10
+2023-07-29 20:20:21,948:INFO: Create Model --- resnet18
+2023-07-29 20:20:37,635:INFO: - Train from scratch 
+2023-07-29 20:20:37,643:INFO: Optimizer: SGD
+2023-07-29 20:20:37,644:INFO: Epoch 1/160
+2023-07-29 20:20:37,644:INFO: Learning Rate 0.1
+2023-07-29 20:28:30,694:INFO: id:pData_scratch-testClean1
+2023-07-29 20:28:30,694:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-07-29 20:28:30,694:INFO: gpu_id:[0]
+2023-07-29 20:28:30,694:INFO: model_name:resnet18
+2023-07-29 20:28:30,694:INFO: resume:
+2023-07-29 20:28:30,695:INFO: learning_rate:0.1
+2023-07-29 20:28:30,695:INFO: schedule:[80, 120]
+2023-07-29 20:28:30,695:INFO: gamma:0.1
+2023-07-29 20:28:30,695:INFO: batch_size:128
+2023-07-29 20:28:30,695:INFO: num_epochs:160
+2023-07-29 20:28:30,695:INFO: num_workers:15
+2023-07-29 20:28:30,695:INFO: augmentation:1
+2023-07-29 20:28:30,695:INFO: seed:0
+2023-07-29 20:28:30,695:INFO: dataset:cifar10
+2023-07-29 20:28:30,696:INFO: use_posion_data:True
+2023-07-29 20:28:30,696:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
+2023-07-29 20:28:30,696:INFO: cuda:True
+2023-07-29 20:28:31,772:INFO: --use_posion_data!
+2023-07-29 20:28:31,772:INFO: Number of class: 10
+2023-07-29 20:28:31,772:INFO: Create Model --- resnet18
+2023-07-29 20:28:47,887:INFO: - Train from scratch 
+2023-07-29 20:28:47,889:INFO: Optimizer: SGD
+2023-07-29 20:28:47,890:INFO: Epoch 1/160
+2023-07-29 20:28:47,890:INFO: Learning Rate 0.1
