@@ -10,6 +10,7 @@ import torchvision.transforms as transforms
 from torch.utils.data.sampler import SubsetRandomSampler
 from torch.utils.data import Dataset
 from PIL import Image
+from torchvision import datasets
 
 
 class inv_transform(object):
@@ -44,38 +45,55 @@ def generate_path_replace(input_path):
     output_path = os.path.join(directory, output_filename)
     return output_path
 
-class Cifar10Dataset(Dataset):
-    def __init__(self, x_path, y_path=None, transform=None):
-        super().__init__()
-        if y_path == None:
-            y_path = generate_path_replace(x_path)
-        self.data = np.load(x_path)
-        self.targets = np.load(y_path)
-        # Convert to Tensor
-        self.data = torch.from_numpy(self.data)
-        self.targets = torch.from_numpy(self.targets).long()
-        self.transform = transform
 
+class Cifar10Dataset(datasets.CIFAR10):
     def __getitem__(self, index):
-        x = self.data[index]
-        y = self.targets[index]
-        if self.transform:
-            # Converts the data from numpy to torch tensor
-            x = self.transform(x)
-        return x, y
+        img, target = self.data[index], self.targets[index]
+        img = Image.fromarray(img)
 
-    def __len__(self):
-        return len(self.data)
+        if self.transform is not None:
+            img = self.transform(img)
+
+        if self.target_transform is not None:
+            target = self.target_transform(target)
+
+        return img, target
+
+
 
 class Cifar10Dataset_img(Dataset):
-    def __init__(self, x_path, y_path=None, transform=None):
+    def __init__(self, x_path=None, y_path=None, 
+                 x_data=None, y_data=None,
+                 transform=None):
         super().__init__()
-        if y_path == None:
-            y_path = generate_path_replace(x_path)
-        self.data = np.load(x_path)
-        self.targets = np.load(y_path)
-        self.transform = transform
+        if x_path != None:
+            if y_path == None:
+                y_path = generate_path_replace(x_path)
+            try: 
+                self.data = np.load(x_path)
+                self.targets = np.load(y_path)
+            except:
+                self.data = torch.load(x_path, map_location="cpu")
+                self.targets = torch.load(y_path, map_location="cpu")
+            self.transform = transform
+            assert self.data.shape[0] == self.targets.shape[0]
+        elif x_data != None and y_data != None:
+            self.data = x_data
+            self.targets = y_data
+            self.transform = transform
+        else:
+            raise ValueError("x_path and x_data can't be None at the same time")
+    
+    def spilit_dataset(self, spilit_ratio):
+        spilit_size = int(spilit_ratio*len(self.data))
+        self.data, data_remain = self.data[:spilit_size], self.data[spilit_size:]
+        self.targets, targets_remain = self.targets[:spilit_size], self.targets[spilit_size:]
 
+        dev_dataset = Cifar10Dataset_img(x_data=data_remain, y_data=targets_remain, 
+                                        transform=self.transform)
+        return self, dev_dataset
+
+    
     def __getitem__(self, index):
         img = self.data[index]
         y = self.targets[index]
@@ -180,6 +198,97 @@ def fetch_dataloader(mode='clean_data', params=None):
     devloader.dataset.invtransformer = invtransformer
     return trainloader, devloader
 
+def fetch_subset_dataloader_(mode='clean_data', params=None):
+    """
+    Fetch subset dataloader with hyperparameters (default no data aug and norm)
+    """
+    # using random crops and horizontal flip for train set
+    # mean = [0.4914, 0.4822, 0.4465]
+    # std = [0.247, 0.243, 0.261]
+    CIFAR10_path = './data/data-cifar10'
+    CIFAR100_path = './data/data-cifar100'
+    if params.augmentation:
+        train_transformer = transforms.Compose([
+            transforms.RandomCrop(32, padding=4),
+            transforms.RandomHorizontalFlip(),  # randomly flip image horizontally
+            transforms.ToTensor(),
+            transforms.Normalize(mean, std)])
+    # data augmentation can be turned off
+    else:
+        train_transformer = transforms.Compose([
+            transforms.ToTensor(),
+            # transforms.Normalize(mean, std)       #remove std norm
+            ])
+
+    # transformer for dev set
+    dev_transformer = transforms.Compose([
+        transforms.ToTensor(), 
+        # transforms.Normalize(mean, std)
+        ])
+    if mode == 'clean_data':
+        # ************************************************************************************
+        if params.dataset == 'cifar10':
+            trainset = torchvision.datasets.CIFAR10(root=CIFAR10_path,
+                                                    train=True,
+                                                    download=True, transform=train_transformer)
+            devset = torchvision.datasets.CIFAR10(root=CIFAR10_path, train=False,
+                                                download=True, transform=dev_transformer)
+        
+        # ************************************************************************************
+        elif params.dataset == 'cifar100':
+            trainset = torchvision.datasets.CIFAR100(root=CIFAR100_path, train=True,
+                                                    download=True, transform=train_transformer)
+            devset = torchvision.datasets.CIFAR100(root=CIFAR100_path,
+                                                train=False,
+                                                download=True, transform=dev_transformer)
+
+        # ************************************************************************************
+        elif params.dataset == 'tiny_imagenet':
+            mean = [0.4802, 0.4481, 0.3975]
+            std = [0.2302, 0.2265, 0.2262]
+            data_dir = './data/tiny-imagenet-200/'
+            data_transforms = {
+                'train': transforms.Compose([
+                    transforms.RandomRotation(20),
+                    transforms.RandomHorizontalFlip(0.5),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean, std),
+                ]),
+                'val': transforms.Compose([
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean, std),
+                ])
+            }
+            train_dir = data_dir + 'train/'
+            test_dir = data_dir + 'val/'
+            trainset = torchvision.datasets.ImageFolder(train_dir, data_transforms['train'])
+            devset = torchvision.datasets.ImageFolder(test_dir, data_transforms['val'])
+    else:
+        assert mode == 'posion_data'
+        assert params.dataset == 'cifar10'
+        # train_transformer = transforms.Compose([
+        #     transforms.Normalize(mean, std)])
+        trainset = Cifar10Dataset_img(x_path=params.pData_path, transform=train_transformer)
+        trainset, devset = trainset.spilit_dataset(spilit_ratio=0.8)    #dev transform==train transform
+
+    if hasattr(params, 'use_entire_dataset'):
+        params.batch_size = len(trainset)
+
+    invtransformer = transforms.Compose([
+        transforms.Normalize(
+            mean=tuple(-m / s for m, s in zip(mean, std)),
+            std=tuple(1.0 / s for s in std),
+        ),
+    ])
+    trainloader = torch.utils.data.DataLoader(trainset, batch_size=params.batch_size,
+                                              shuffle=True, num_workers=params.num_workers)
+
+    devloader = torch.utils.data.DataLoader(devset, batch_size=params.batch_size,
+                                            shuffle=False, num_workers=params.num_workers)
+    trainloader.dataset.invtransformer = invtransformer
+    devloader.dataset.invtransformer = invtransformer
+    return trainloader, devloader
+
 
 def fetch_subset_dataloader(types, params):
     """
@@ -244,7 +353,6 @@ def fetch_subset_dataloader(types, params):
     split = int(np.floor(params.subset_percent * trainset_size))
     np.random.seed(230)
     np.random.shuffle(indices)
-
     train_sampler = SubsetRandomSampler(indices[:split])
 
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=params.batch_size,

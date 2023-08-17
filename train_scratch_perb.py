@@ -12,7 +12,7 @@ import numpy as np
 
 from utils.utils import RunningAverage, set_logger, Params
 from model import *
-from data_loader import fetch_dataloader
+from data_loader import fetch_dataloader, fetch_subset_dataloader_
 from cam_Vis import *
 
 
@@ -173,9 +173,9 @@ if __name__ == "__main__":
     set_logger(os.path.join(args.save_path, 'training.log'))
 
     # #################### Load the parameters from json file #####################################
-    # json_path = os.path.join(args.save_path, 'params.json')
-    # assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
-    # params = Params(json_path)
+    json_path = os.path.join(args.save_path, 'params.json')
+    assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
+    params = Params(json_path)
 
     args.cuda = torch.cuda.is_available() # use GPU if available
     # torch.set_default_dtype(torch.float64)
@@ -185,11 +185,11 @@ if __name__ == "__main__":
 
     # ########################################## Dataset ##########################################
     if args.use_posion_data:
-        trainloader, devloader = fetch_dataloader('posion_data', args)
+        trainloader, devloader = fetch_subset_dataloader_('posion_data', args)
         logging.info('--use_posion_data!')
     else:
         trainloader, devloader = fetch_dataloader('clean_data', args)
-        logging.info('use clean dataset!')
+        logging.info('--use clean dataset!')
     # ############################################ Model ############################################
     if args.dataset == 'cifar10':
         num_class = 10

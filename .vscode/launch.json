@@ -117,6 +117,35 @@
             "PYTHONPATH": "${workspaceFolder}/libs/"
         }
       },
+
+      {
+        "name": "train_scratch_cleanImgs_perb.py",
+        "justMyCode": false,
+        "type": "python",
+        "request": "launch",
+        "python": "python",
+        "args": [
+            "--id=debug-testClean1",
+            "--save_path=experiments/CIFAR10/baseline/resnet18_pData",
+            "--model_name=resnet18",
+            "--learning_rate=0.1",
+            "--gamma=0.1",
+            "--batch_size=128",
+            "--num_epochs=160",
+            "--num_workers=15",
+            "--augmentation=1",
+            "--seed=0",
+            "--dataset=cifar10",
+            "--gpu_id=1",
+            "--augmentation=0",
+            "--pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy"
+        ],
+        "program": "train_scratch_perb.py",
+        "console": "integratedTerminal",
+        "env": {
+            "PYTHONPATH": "${workspaceFolder}/libs/"
+        }
+      },
     
 
       {
