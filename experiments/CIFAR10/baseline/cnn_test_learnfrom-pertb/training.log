@@ -20746,3 +20746,1324 @@
 2023-08-17 23:14:53,577:INFO: use_posion_data:False
 2023-08-17 23:14:53,577:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
 2023-08-17 23:14:53,577:INFO: cuda:True
+2023-08-18 11:53:22,846:INFO: num_channels:32
+2023-08-18 11:53:22,846:INFO: dropout_rate:0.0
+2023-08-18 11:53:22,847:INFO: schedule:[999]
+2023-08-18 11:53:22,847:INFO: id:test_learnfrom-pertb
+2023-08-18 11:53:22,847:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 11:53:22,847:INFO: gpu_id:[1]
+2023-08-18 11:53:22,847:INFO: model_name:net
+2023-08-18 11:53:22,848:INFO: resume:
+2023-08-18 11:53:22,848:INFO: learning_rate:0.001
+2023-08-18 11:53:22,848:INFO: gamma:0.1
+2023-08-18 11:53:22,848:INFO: batch_size:128
+2023-08-18 11:53:22,848:INFO: num_epochs:100
+2023-08-18 11:53:22,848:INFO: num_workers:4
+2023-08-18 11:53:22,849:INFO: augmentation:0
+2023-08-18 11:53:22,849:INFO: seed:0
+2023-08-18 11:53:22,849:INFO: dataset:cifar10
+2023-08-18 11:53:22,849:INFO: use_posion_data:True
+2023-08-18 11:53:22,849:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 11:53:22,850:INFO: cuda:True
+2023-08-18 11:56:01,170:INFO: num_channels:32
+2023-08-18 11:56:01,170:INFO: dropout_rate:0.0
+2023-08-18 11:56:01,171:INFO: schedule:[999]
+2023-08-18 11:56:01,172:INFO: id:test_learnfrom-pertb
+2023-08-18 11:56:01,173:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 11:56:01,173:INFO: gpu_id:[1]
+2023-08-18 11:56:01,174:INFO: model_name:net
+2023-08-18 11:56:01,175:INFO: resume:
+2023-08-18 11:56:01,176:INFO: learning_rate:0.001
+2023-08-18 11:56:01,176:INFO: gamma:0.1
+2023-08-18 11:56:01,177:INFO: batch_size:128
+2023-08-18 11:56:01,177:INFO: num_epochs:100
+2023-08-18 11:56:01,178:INFO: num_workers:4
+2023-08-18 11:56:01,179:INFO: augmentation:0
+2023-08-18 11:56:01,179:INFO: seed:0
+2023-08-18 11:56:01,180:INFO: dataset:cifar10
+2023-08-18 11:56:01,180:INFO: use_posion_data:True
+2023-08-18 11:56:01,181:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 11:56:01,182:INFO: cuda:True
+2023-08-18 11:58:00,009:INFO: num_channels:32
+2023-08-18 11:58:00,009:INFO: dropout_rate:0.0
+2023-08-18 11:58:00,010:INFO: schedule:[999]
+2023-08-18 11:58:00,010:INFO: id:test_learnfrom-pertb
+2023-08-18 11:58:00,010:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 11:58:00,010:INFO: gpu_id:[1]
+2023-08-18 11:58:00,011:INFO: model_name:net
+2023-08-18 11:58:00,011:INFO: resume:
+2023-08-18 11:58:00,011:INFO: learning_rate:0.001
+2023-08-18 11:58:00,012:INFO: gamma:0.1
+2023-08-18 11:58:00,012:INFO: batch_size:128
+2023-08-18 11:58:00,012:INFO: num_epochs:100
+2023-08-18 11:58:00,012:INFO: num_workers:4
+2023-08-18 11:58:00,013:INFO: augmentation:0
+2023-08-18 11:58:00,013:INFO: seed:0
+2023-08-18 11:58:00,013:INFO: dataset:cifar10
+2023-08-18 11:58:00,013:INFO: use_posion_data:True
+2023-08-18 11:58:00,014:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 11:58:00,014:INFO: cuda:True
+2023-08-18 12:02:47,786:INFO: num_channels:32
+2023-08-18 12:02:47,788:INFO: dropout_rate:0.0
+2023-08-18 12:02:47,789:INFO: schedule:[999]
+2023-08-18 12:02:47,789:INFO: id:debug_test_learnfrom-pertb
+2023-08-18 12:02:47,790:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 12:02:47,791:INFO: gpu_id:[1]
+2023-08-18 12:02:47,791:INFO: model_name:net
+2023-08-18 12:02:47,792:INFO: resume:
+2023-08-18 12:02:47,792:INFO: learning_rate:0.001
+2023-08-18 12:02:47,793:INFO: gamma:0.1
+2023-08-18 12:02:47,793:INFO: batch_size:128
+2023-08-18 12:02:47,794:INFO: num_epochs:100
+2023-08-18 12:02:47,794:INFO: num_workers:4
+2023-08-18 12:02:47,795:INFO: augmentation:0
+2023-08-18 12:02:47,796:INFO: seed:0
+2023-08-18 12:02:47,796:INFO: dataset:cifar10
+2023-08-18 12:02:47,797:INFO: use_posion_data:True
+2023-08-18 12:02:47,797:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 12:02:47,798:INFO: cuda:True
+2023-08-18 12:08:37,639:INFO: --use_posion_data!
+2023-08-18 12:08:37,643:INFO: Number of class: 10
+2023-08-18 12:08:37,643:INFO: Create Model --- net
+2023-08-18 12:08:48,125:INFO: - Train from scratch 
+2023-08-18 12:08:48,128:INFO: Optimizer: Adam
+2023-08-18 12:08:48,128:INFO: Epoch 1/100
+2023-08-18 12:08:48,129:INFO: Learning Rate 0.001
+2023-08-18 12:14:46,598:INFO: num_channels:32
+2023-08-18 12:14:46,600:INFO: dropout_rate:0.0
+2023-08-18 12:14:46,600:INFO: schedule:[999]
+2023-08-18 12:14:46,601:INFO: id:debug_test_learnfrom-pertb
+2023-08-18 12:14:46,601:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 12:14:46,601:INFO: gpu_id:[1]
+2023-08-18 12:14:46,601:INFO: model_name:net
+2023-08-18 12:14:46,602:INFO: resume:
+2023-08-18 12:14:46,602:INFO: learning_rate:0.001
+2023-08-18 12:14:46,602:INFO: gamma:0.1
+2023-08-18 12:14:46,603:INFO: batch_size:128
+2023-08-18 12:14:46,603:INFO: num_epochs:100
+2023-08-18 12:14:46,603:INFO: num_workers:4
+2023-08-18 12:14:46,603:INFO: augmentation:0
+2023-08-18 12:14:46,604:INFO: seed:0
+2023-08-18 12:14:46,604:INFO: dataset:cifar10
+2023-08-18 12:14:46,604:INFO: use_posion_data:True
+2023-08-18 12:14:46,605:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 12:14:46,605:INFO: cuda:True
+2023-08-18 12:42:24,773:INFO: num_channels:32
+2023-08-18 12:42:24,774:INFO: dropout_rate:0.0
+2023-08-18 12:42:24,774:INFO: schedule:[999]
+2023-08-18 12:42:24,775:INFO: id:debug_test_learnfrom-pertb
+2023-08-18 12:42:24,775:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 12:42:24,775:INFO: gpu_id:[1]
+2023-08-18 12:42:24,775:INFO: model_name:net
+2023-08-18 12:42:24,776:INFO: resume:
+2023-08-18 12:42:24,776:INFO: learning_rate:0.001
+2023-08-18 12:42:24,776:INFO: gamma:0.1
+2023-08-18 12:42:24,778:INFO: batch_size:128
+2023-08-18 12:42:24,779:INFO: num_epochs:100
+2023-08-18 12:42:24,782:INFO: num_workers:4
+2023-08-18 12:42:24,783:INFO: augmentation:0
+2023-08-18 12:42:24,783:INFO: seed:0
+2023-08-18 12:42:24,784:INFO: dataset:cifar10
+2023-08-18 12:42:24,784:INFO: use_posion_data:True
+2023-08-18 12:42:24,785:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 12:42:24,785:INFO: cuda:True
+2023-08-18 12:42:38,201:INFO: --use_posion_data!
+2023-08-18 12:42:38,203:INFO: Number of class: 10
+2023-08-18 12:42:38,204:INFO: Create Model --- net
+2023-08-18 12:42:51,148:INFO: - Train from scratch 
+2023-08-18 12:42:51,152:INFO: Optimizer: Adam
+2023-08-18 12:42:51,153:INFO: Epoch 1/100
+2023-08-18 12:42:51,154:INFO: Learning Rate 0.001
+2023-08-18 12:45:05,016:INFO: num_channels:32
+2023-08-18 12:45:05,019:INFO: dropout_rate:0.0
+2023-08-18 12:45:05,021:INFO: schedule:[999]
+2023-08-18 12:45:05,022:INFO: id:debug_test_learnfrom-pertb
+2023-08-18 12:45:05,023:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 12:45:05,025:INFO: gpu_id:[1]
+2023-08-18 12:45:05,026:INFO: model_name:net
+2023-08-18 12:45:05,028:INFO: resume:
+2023-08-18 12:45:05,029:INFO: learning_rate:0.001
+2023-08-18 12:45:05,030:INFO: gamma:0.1
+2023-08-18 12:45:05,032:INFO: batch_size:128
+2023-08-18 12:45:05,033:INFO: num_epochs:100
+2023-08-18 12:45:05,034:INFO: num_workers:4
+2023-08-18 12:45:05,036:INFO: augmentation:0
+2023-08-18 12:45:05,037:INFO: seed:0
+2023-08-18 12:45:05,038:INFO: dataset:cifar10
+2023-08-18 12:45:05,039:INFO: use_posion_data:True
+2023-08-18 12:45:05,041:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 12:45:05,042:INFO: cuda:True
+2023-08-18 12:45:06,255:INFO: --use_posion_data!
+2023-08-18 12:45:06,257:INFO: Number of class: 10
+2023-08-18 12:45:06,258:INFO: Create Model --- net
+2023-08-18 12:45:17,943:INFO: - Train from scratch 
+2023-08-18 12:45:17,951:INFO: Optimizer: Adam
+2023-08-18 12:45:17,960:INFO: Epoch 1/100
+2023-08-18 12:45:17,961:INFO: Learning Rate 0.001
+2023-08-18 12:46:57,114:INFO: num_channels:32
+2023-08-18 12:46:57,116:INFO: dropout_rate:0.0
+2023-08-18 12:46:57,118:INFO: schedule:[999]
+2023-08-18 12:46:57,119:INFO: id:debug_test_learnfrom-pertb
+2023-08-18 12:46:57,120:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 12:46:57,122:INFO: gpu_id:[1]
+2023-08-18 12:46:57,124:INFO: model_name:net
+2023-08-18 12:46:57,126:INFO: resume:
+2023-08-18 12:46:57,127:INFO: learning_rate:0.001
+2023-08-18 12:46:57,129:INFO: gamma:0.1
+2023-08-18 12:46:57,130:INFO: batch_size:128
+2023-08-18 12:46:57,131:INFO: num_epochs:100
+2023-08-18 12:46:57,132:INFO: num_workers:4
+2023-08-18 12:46:57,134:INFO: augmentation:0
+2023-08-18 12:46:57,135:INFO: seed:0
+2023-08-18 12:46:57,136:INFO: dataset:cifar10
+2023-08-18 12:46:57,138:INFO: use_posion_data:True
+2023-08-18 12:46:57,140:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 12:46:57,141:INFO: cuda:True
+2023-08-18 12:47:07,980:INFO: --use_posion_data!
+2023-08-18 12:47:07,982:INFO: Number of class: 10
+2023-08-18 12:47:07,982:INFO: Create Model --- net
+2023-08-18 12:47:22,768:INFO: - Train from scratch 
+2023-08-18 12:47:22,773:INFO: Optimizer: Adam
+2023-08-18 12:47:22,776:INFO: Epoch 1/100
+2023-08-18 12:47:22,777:INFO: Learning Rate 0.001
+2023-08-18 12:59:10,503:INFO: num_channels:32
+2023-08-18 12:59:10,504:INFO: dropout_rate:0.0
+2023-08-18 12:59:10,504:INFO: schedule:[999]
+2023-08-18 12:59:10,504:INFO: id:test_learnfrom-pertb
+2023-08-18 12:59:10,504:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 12:59:10,504:INFO: gpu_id:[1]
+2023-08-18 12:59:10,504:INFO: model_name:net
+2023-08-18 12:59:10,504:INFO: resume:
+2023-08-18 12:59:10,505:INFO: learning_rate:0.001
+2023-08-18 12:59:10,505:INFO: gamma:0.1
+2023-08-18 12:59:10,505:INFO: batch_size:128
+2023-08-18 12:59:10,505:INFO: num_epochs:100
+2023-08-18 12:59:10,505:INFO: num_workers:4
+2023-08-18 12:59:10,505:INFO: augmentation:0
+2023-08-18 12:59:10,506:INFO: seed:0
+2023-08-18 12:59:10,506:INFO: dataset:cifar10
+2023-08-18 12:59:10,506:INFO: use_posion_data:True
+2023-08-18 12:59:10,506:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.pt
+2023-08-18 12:59:10,506:INFO: cuda:True
+2023-08-18 13:01:15,962:INFO: num_channels:32
+2023-08-18 13:01:15,964:INFO: dropout_rate:0.0
+2023-08-18 13:01:15,965:INFO: schedule:[999]
+2023-08-18 13:01:15,965:INFO: id:debug_test_learnfrom-pertb
+2023-08-18 13:01:15,966:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 13:01:15,966:INFO: gpu_id:[1]
+2023-08-18 13:01:15,967:INFO: model_name:net
+2023-08-18 13:01:15,967:INFO: resume:
+2023-08-18 13:01:15,968:INFO: learning_rate:0.001
+2023-08-18 13:01:15,968:INFO: gamma:0.1
+2023-08-18 13:01:15,969:INFO: batch_size:128
+2023-08-18 13:01:15,969:INFO: num_epochs:100
+2023-08-18 13:01:15,970:INFO: num_workers:4
+2023-08-18 13:01:15,970:INFO: augmentation:0
+2023-08-18 13:01:15,971:INFO: seed:0
+2023-08-18 13:01:15,971:INFO: dataset:cifar10
+2023-08-18 13:01:15,971:INFO: use_posion_data:True
+2023-08-18 13:01:15,972:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy
+2023-08-18 13:01:15,973:INFO: cuda:True
+2023-08-18 13:02:15,871:INFO: num_channels:32
+2023-08-18 13:02:15,873:INFO: dropout_rate:0.0
+2023-08-18 13:02:15,874:INFO: schedule:[999]
+2023-08-18 13:02:15,875:INFO: id:debug_test_learnfrom-pertb
+2023-08-18 13:02:15,875:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 13:02:15,891:INFO: gpu_id:[1]
+2023-08-18 13:02:15,892:INFO: model_name:net
+2023-08-18 13:02:15,893:INFO: resume:
+2023-08-18 13:02:15,894:INFO: learning_rate:0.001
+2023-08-18 13:02:15,895:INFO: gamma:0.1
+2023-08-18 13:02:15,895:INFO: batch_size:128
+2023-08-18 13:02:15,896:INFO: num_epochs:100
+2023-08-18 13:02:15,898:INFO: num_workers:4
+2023-08-18 13:02:15,899:INFO: augmentation:0
+2023-08-18 13:02:15,902:INFO: seed:0
+2023-08-18 13:02:15,903:INFO: dataset:cifar10
+2023-08-18 13:02:15,904:INFO: use_posion_data:True
+2023-08-18 13:02:15,905:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.pt
+2023-08-18 13:02:15,906:INFO: cuda:True
+2023-08-18 13:04:37,937:INFO: num_channels:32
+2023-08-18 13:04:37,938:INFO: dropout_rate:0.0
+2023-08-18 13:04:37,939:INFO: schedule:[999]
+2023-08-18 13:04:37,940:INFO: id:test_learnfrom-pertb
+2023-08-18 13:04:37,940:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 13:04:37,941:INFO: gpu_id:[1]
+2023-08-18 13:04:37,942:INFO: model_name:net
+2023-08-18 13:04:37,942:INFO: resume:
+2023-08-18 13:04:37,943:INFO: learning_rate:0.001
+2023-08-18 13:04:37,944:INFO: gamma:0.1
+2023-08-18 13:04:37,944:INFO: batch_size:128
+2023-08-18 13:04:37,945:INFO: num_epochs:100
+2023-08-18 13:04:37,945:INFO: num_workers:4
+2023-08-18 13:04:37,946:INFO: augmentation:0
+2023-08-18 13:04:37,947:INFO: seed:0
+2023-08-18 13:04:37,947:INFO: dataset:cifar10
+2023-08-18 13:04:37,948:INFO: use_posion_data:True
+2023-08-18 13:04:37,949:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.pt
+2023-08-18 13:04:37,949:INFO: cuda:True
+2023-08-18 13:04:39,066:INFO: --use_posion_data!
+2023-08-18 13:04:39,066:INFO: Number of class: 10
+2023-08-18 13:04:39,067:INFO: Create Model --- net
+2023-08-18 13:04:49,637:INFO: - Train from scratch 
+2023-08-18 13:04:49,659:INFO: Optimizer: Adam
+2023-08-18 13:04:49,660:INFO: Epoch 1/100
+2023-08-18 13:04:49,661:INFO: Learning Rate 0.001
+2023-08-18 13:05:01,364:INFO: - Train loss : 1.767
+2023-08-18 13:05:04,639:INFO: - Eval metrics : acc: 29.292 ; loss: 2.151
+2023-08-18 13:05:04,708:INFO: - New best model 
+2023-08-18 13:05:04,779:INFO: - So far best epoch: 1, best acc: 29.292
+2023-08-18 13:05:04,780:INFO: Epoch 2/100
+2023-08-18 13:05:04,780:INFO: Learning Rate 0.001
+2023-08-18 13:05:16,520:INFO: - Train loss : 1.520
+2023-08-18 13:05:19,106:INFO: - Eval metrics : acc: 30.489 ; loss: 2.104
+2023-08-18 13:05:19,201:INFO: - New best model 
+2023-08-18 13:05:19,285:INFO: - So far best epoch: 2, best acc: 30.489
+2023-08-18 13:05:19,285:INFO: Epoch 3/100
+2023-08-18 13:05:19,285:INFO: Learning Rate 0.001
+2023-08-18 13:05:31,734:INFO: - Train loss : 1.352
+2023-08-18 13:05:35,328:INFO: - Eval metrics : acc: 37.203 ; loss: 1.933
+2023-08-18 13:05:35,414:INFO: - New best model 
+2023-08-18 13:05:35,500:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:05:35,501:INFO: Epoch 4/100
+2023-08-18 13:05:35,502:INFO: Learning Rate 0.001
+2023-08-18 13:05:45,675:INFO: - Train loss : 1.162
+2023-08-18 13:05:48,596:INFO: - Eval metrics : acc: 32.071 ; loss: 2.363
+2023-08-18 13:05:48,670:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:05:48,670:INFO: Epoch 5/100
+2023-08-18 13:05:48,671:INFO: Learning Rate 0.001
+2023-08-18 13:05:58,157:INFO: - Train loss : 0.946
+2023-08-18 13:06:01,339:INFO: - Eval metrics : acc: 34.602 ; loss: 2.105
+2023-08-18 13:06:01,430:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:06:01,431:INFO: Epoch 6/100
+2023-08-18 13:06:01,431:INFO: Learning Rate 0.001
+2023-08-18 13:06:10,614:INFO: - Train loss : 0.718
+2023-08-18 13:06:13,264:INFO: - Eval metrics : acc: 33.258 ; loss: 2.648
+2023-08-18 13:06:13,376:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:06:13,376:INFO: Epoch 7/100
+2023-08-18 13:06:13,376:INFO: Learning Rate 0.001
+2023-08-18 13:06:24,726:INFO: - Train loss : 0.520
+2023-08-18 13:06:28,274:INFO: - Eval metrics : acc: 31.833 ; loss: 3.110
+2023-08-18 13:06:28,354:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:06:28,354:INFO: Epoch 8/100
+2023-08-18 13:06:28,354:INFO: Learning Rate 0.001
+2023-08-18 13:06:40,712:INFO: - Train loss : 0.356
+2023-08-18 13:06:44,665:INFO: - Eval metrics : acc: 35.265 ; loss: 2.972
+2023-08-18 13:06:44,772:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:06:44,772:INFO: Epoch 9/100
+2023-08-18 13:06:44,773:INFO: Learning Rate 0.001
+2023-08-18 13:06:56,335:INFO: - Train loss : 0.238
+2023-08-18 13:06:59,755:INFO: - Eval metrics : acc: 33.337 ; loss: 3.082
+2023-08-18 13:06:59,880:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:06:59,881:INFO: Epoch 10/100
+2023-08-18 13:06:59,882:INFO: Learning Rate 0.001
+2023-08-18 13:07:11,689:INFO: - Train loss : 0.161
+2023-08-18 13:07:13,897:INFO: - Eval metrics : acc: 31.705 ; loss: 4.184
+2023-08-18 13:07:13,973:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:07:13,975:INFO: Epoch 11/100
+2023-08-18 13:07:13,975:INFO: Learning Rate 0.001
+2023-08-18 13:07:23,336:INFO: - Train loss : 0.128
+2023-08-18 13:07:26,326:INFO: - Eval metrics : acc: 34.088 ; loss: 3.674
+2023-08-18 13:07:26,435:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:07:26,435:INFO: Epoch 12/100
+2023-08-18 13:07:26,436:INFO: Learning Rate 0.001
+2023-08-18 13:07:38,239:INFO: - Train loss : 0.120
+2023-08-18 13:07:41,771:INFO: - Eval metrics : acc: 34.464 ; loss: 3.834
+2023-08-18 13:07:42,013:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:07:42,014:INFO: Epoch 13/100
+2023-08-18 13:07:42,014:INFO: Learning Rate 0.001
+2023-08-18 13:07:53,636:INFO: - Train loss : 0.121
+2023-08-18 13:07:57,003:INFO: - Eval metrics : acc: 34.167 ; loss: 4.307
+2023-08-18 13:07:57,101:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:07:57,102:INFO: Epoch 14/100
+2023-08-18 13:07:57,102:INFO: Learning Rate 0.001
+2023-08-18 13:08:07,613:INFO: - Train loss : 0.120
+2023-08-18 13:08:10,765:INFO: - Eval metrics : acc: 32.269 ; loss: 4.888
+2023-08-18 13:08:10,858:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:08:10,858:INFO: Epoch 15/100
+2023-08-18 13:08:10,859:INFO: Learning Rate 0.001
+2023-08-18 13:08:22,079:INFO: - Train loss : 0.108
+2023-08-18 13:08:25,276:INFO: - Eval metrics : acc: 33.851 ; loss: 4.141
+2023-08-18 13:08:25,401:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:08:25,401:INFO: Epoch 16/100
+2023-08-18 13:08:25,402:INFO: Learning Rate 0.001
+2023-08-18 13:08:35,336:INFO: - Train loss : 0.089
+2023-08-18 13:08:38,288:INFO: - Eval metrics : acc: 34.039 ; loss: 4.419
+2023-08-18 13:08:38,373:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:08:38,374:INFO: Epoch 17/100
+2023-08-18 13:08:38,375:INFO: Learning Rate 0.001
+2023-08-18 13:08:46,820:INFO: - Train loss : 0.061
+2023-08-18 13:08:49,736:INFO: - Eval metrics : acc: 34.494 ; loss: 4.620
+2023-08-18 13:08:49,828:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:08:49,829:INFO: Epoch 18/100
+2023-08-18 13:08:49,829:INFO: Learning Rate 0.001
+2023-08-18 13:08:59,271:INFO: - Train loss : 0.048
+2023-08-18 13:09:02,513:INFO: - Eval metrics : acc: 34.701 ; loss: 4.664
+2023-08-18 13:09:02,597:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:09:02,598:INFO: Epoch 19/100
+2023-08-18 13:09:02,599:INFO: Learning Rate 0.001
+2023-08-18 13:09:14,954:INFO: - Train loss : 0.056
+2023-08-18 13:09:18,366:INFO: - Eval metrics : acc: 32.941 ; loss: 5.162
+2023-08-18 13:09:18,454:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:09:18,454:INFO: Epoch 20/100
+2023-08-18 13:09:18,455:INFO: Learning Rate 0.001
+2023-08-18 13:09:29,910:INFO: - Train loss : 0.126
+2023-08-18 13:09:33,539:INFO: - Eval metrics : acc: 31.398 ; loss: 5.036
+2023-08-18 13:09:33,626:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:09:33,627:INFO: Epoch 21/100
+2023-08-18 13:09:33,627:INFO: Learning Rate 0.001
+2023-08-18 13:09:45,362:INFO: - Train loss : 0.150
+2023-08-18 13:09:48,816:INFO: - Eval metrics : acc: 32.377 ; loss: 5.183
+2023-08-18 13:09:48,899:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:09:48,899:INFO: Epoch 22/100
+2023-08-18 13:09:48,899:INFO: Learning Rate 0.001
+2023-08-18 13:09:58,784:INFO: - Train loss : 0.080
+2023-08-18 13:10:02,010:INFO: - Eval metrics : acc: 34.662 ; loss: 5.040
+2023-08-18 13:10:02,090:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:10:02,091:INFO: Epoch 23/100
+2023-08-18 13:10:02,091:INFO: Learning Rate 0.001
+2023-08-18 13:10:09,912:INFO: - Train loss : 0.034
+2023-08-18 13:10:12,430:INFO: - Eval metrics : acc: 34.968 ; loss: 4.559
+2023-08-18 13:10:12,510:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:10:12,511:INFO: Epoch 24/100
+2023-08-18 13:10:12,511:INFO: Learning Rate 0.001
+2023-08-18 13:10:21,722:INFO: - Train loss : 0.013
+2023-08-18 13:10:24,560:INFO: - Eval metrics : acc: 35.008 ; loss: 4.682
+2023-08-18 13:10:24,637:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:10:24,639:INFO: Epoch 25/100
+2023-08-18 13:10:24,639:INFO: Learning Rate 0.001
+2023-08-18 13:10:35,233:INFO: - Train loss : 0.005
+2023-08-18 13:10:39,413:INFO: - Eval metrics : acc: 35.166 ; loss: 4.730
+2023-08-18 13:10:39,505:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:10:39,506:INFO: Epoch 26/100
+2023-08-18 13:10:39,506:INFO: Learning Rate 0.001
+2023-08-18 13:10:50,481:INFO: - Train loss : 0.003
+2023-08-18 13:10:53,293:INFO: - Eval metrics : acc: 35.344 ; loss: 4.762
+2023-08-18 13:10:53,376:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:10:53,376:INFO: Epoch 27/100
+2023-08-18 13:10:53,377:INFO: Learning Rate 0.001
+2023-08-18 13:11:04,091:INFO: - Train loss : 0.002
+2023-08-18 13:11:06,997:INFO: - Eval metrics : acc: 35.057 ; loss: 4.789
+2023-08-18 13:11:07,068:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:11:07,069:INFO: Epoch 28/100
+2023-08-18 13:11:07,069:INFO: Learning Rate 0.001
+2023-08-18 13:11:17,940:INFO: - Train loss : 0.001
+2023-08-18 13:11:21,005:INFO: - Eval metrics : acc: 35.542 ; loss: 4.872
+2023-08-18 13:11:21,097:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:11:21,097:INFO: Epoch 29/100
+2023-08-18 13:11:21,097:INFO: Learning Rate 0.001
+2023-08-18 13:11:30,544:INFO: - Train loss : 0.001
+2023-08-18 13:11:34,190:INFO: - Eval metrics : acc: 35.433 ; loss: 4.948
+2023-08-18 13:11:34,262:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:11:34,263:INFO: Epoch 30/100
+2023-08-18 13:11:34,263:INFO: Learning Rate 0.001
+2023-08-18 13:11:45,120:INFO: - Train loss : 0.001
+2023-08-18 13:11:49,108:INFO: - Eval metrics : acc: 35.453 ; loss: 4.998
+2023-08-18 13:11:49,266:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:11:49,266:INFO: Epoch 31/100
+2023-08-18 13:11:49,267:INFO: Learning Rate 0.001
+2023-08-18 13:12:01,953:INFO: - Train loss : 0.001
+2023-08-18 13:12:05,609:INFO: - Eval metrics : acc: 35.463 ; loss: 5.035
+2023-08-18 13:12:05,700:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:12:05,701:INFO: Epoch 32/100
+2023-08-18 13:12:05,701:INFO: Learning Rate 0.001
+2023-08-18 13:12:15,698:INFO: - Train loss : 0.001
+2023-08-18 13:12:19,198:INFO: - Eval metrics : acc: 35.680 ; loss: 5.091
+2023-08-18 13:12:19,274:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:12:19,275:INFO: Epoch 33/100
+2023-08-18 13:12:19,275:INFO: Learning Rate 0.001
+2023-08-18 13:12:30,442:INFO: - Train loss : 0.000
+2023-08-18 13:12:33,169:INFO: - Eval metrics : acc: 35.324 ; loss: 5.158
+2023-08-18 13:12:33,244:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:12:33,245:INFO: Epoch 34/100
+2023-08-18 13:12:33,245:INFO: Learning Rate 0.001
+2023-08-18 13:12:43,739:INFO: - Train loss : 0.000
+2023-08-18 13:12:47,028:INFO: - Eval metrics : acc: 35.295 ; loss: 5.226
+2023-08-18 13:12:47,108:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:12:47,109:INFO: Epoch 35/100
+2023-08-18 13:12:47,109:INFO: Learning Rate 0.001
+2023-08-18 13:12:55,887:INFO: - Train loss : 0.000
+2023-08-18 13:12:59,725:INFO: - Eval metrics : acc: 35.364 ; loss: 5.271
+2023-08-18 13:12:59,832:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:12:59,833:INFO: Epoch 36/100
+2023-08-18 13:12:59,834:INFO: Learning Rate 0.001
+2023-08-18 13:13:09,080:INFO: - Train loss : 0.001
+2023-08-18 13:13:11,636:INFO: - Eval metrics : acc: 28.521 ; loss: 9.380
+2023-08-18 13:13:11,760:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:13:11,761:INFO: Epoch 37/100
+2023-08-18 13:13:11,761:INFO: Learning Rate 0.001
+2023-08-18 13:13:23,732:INFO: - Train loss : 0.947
+2023-08-18 13:13:26,593:INFO: - Eval metrics : acc: 32.456 ; loss: 4.002
+2023-08-18 13:13:26,685:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:13:26,686:INFO: Epoch 38/100
+2023-08-18 13:13:26,686:INFO: Learning Rate 0.001
+2023-08-18 13:13:37,902:INFO: - Train loss : 0.156
+2023-08-18 13:13:41,108:INFO: - Eval metrics : acc: 36.669 ; loss: 3.492
+2023-08-18 13:13:41,188:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:13:41,189:INFO: Epoch 39/100
+2023-08-18 13:13:41,189:INFO: Learning Rate 0.001
+2023-08-18 13:13:52,544:INFO: - Train loss : 0.035
+2023-08-18 13:13:56,437:INFO: - Eval metrics : acc: 37.164 ; loss: 3.703
+2023-08-18 13:13:56,518:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:13:56,519:INFO: Epoch 40/100
+2023-08-18 13:13:56,520:INFO: Learning Rate 0.001
+2023-08-18 13:14:07,355:INFO: - Train loss : 0.013
+2023-08-18 13:14:10,249:INFO: - Eval metrics : acc: 37.035 ; loss: 3.833
+2023-08-18 13:14:10,360:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:14:10,367:INFO: Epoch 41/100
+2023-08-18 13:14:10,370:INFO: Learning Rate 0.001
+2023-08-18 13:14:20,004:INFO: - Train loss : 0.008
+2023-08-18 13:14:24,010:INFO: - Eval metrics : acc: 36.986 ; loss: 3.968
+2023-08-18 13:14:24,123:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:14:24,123:INFO: Epoch 42/100
+2023-08-18 13:14:24,124:INFO: Learning Rate 0.001
+2023-08-18 13:14:34,065:INFO: - Train loss : 0.005
+2023-08-18 13:14:37,952:INFO: - Eval metrics : acc: 36.867 ; loss: 4.082
+2023-08-18 13:14:38,199:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:14:38,199:INFO: Epoch 43/100
+2023-08-18 13:14:38,200:INFO: Learning Rate 0.001
+2023-08-18 13:14:51,428:INFO: - Train loss : 0.004
+2023-08-18 13:14:55,802:INFO: - Eval metrics : acc: 36.907 ; loss: 4.189
+2023-08-18 13:14:55,887:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:14:55,888:INFO: Epoch 44/100
+2023-08-18 13:14:55,888:INFO: Learning Rate 0.001
+2023-08-18 13:15:05,752:INFO: - Train loss : 0.003
+2023-08-18 13:15:09,777:INFO: - Eval metrics : acc: 36.709 ; loss: 4.275
+2023-08-18 13:15:09,860:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:15:09,861:INFO: Epoch 45/100
+2023-08-18 13:15:09,861:INFO: Learning Rate 0.001
+2023-08-18 13:15:19,923:INFO: - Train loss : 0.002
+2023-08-18 13:15:22,919:INFO: - Eval metrics : acc: 36.719 ; loss: 4.376
+2023-08-18 13:15:22,999:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:15:22,999:INFO: Epoch 46/100
+2023-08-18 13:15:23,000:INFO: Learning Rate 0.001
+2023-08-18 13:15:31,667:INFO: - Train loss : 0.002
+2023-08-18 13:15:34,086:INFO: - Eval metrics : acc: 36.640 ; loss: 4.439
+2023-08-18 13:15:34,172:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:15:34,173:INFO: Epoch 47/100
+2023-08-18 13:15:34,173:INFO: Learning Rate 0.001
+2023-08-18 13:15:43,883:INFO: - Train loss : 0.002
+2023-08-18 13:15:46,595:INFO: - Eval metrics : acc: 36.561 ; loss: 4.532
+2023-08-18 13:15:46,699:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:15:46,700:INFO: Epoch 48/100
+2023-08-18 13:15:46,700:INFO: Learning Rate 0.001
+2023-08-18 13:15:56,587:INFO: - Train loss : 0.001
+2023-08-18 13:15:59,739:INFO: - Eval metrics : acc: 36.452 ; loss: 4.643
+2023-08-18 13:15:59,848:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:15:59,849:INFO: Epoch 49/100
+2023-08-18 13:15:59,849:INFO: Learning Rate 0.001
+2023-08-18 13:16:10,922:INFO: - Train loss : 0.001
+2023-08-18 13:16:14,183:INFO: - Eval metrics : acc: 36.551 ; loss: 4.704
+2023-08-18 13:16:14,290:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:16:14,291:INFO: Epoch 50/100
+2023-08-18 13:16:14,291:INFO: Learning Rate 0.001
+2023-08-18 13:16:24,963:INFO: - Train loss : 0.001
+2023-08-18 13:16:28,597:INFO: - Eval metrics : acc: 36.165 ; loss: 4.803
+2023-08-18 13:16:28,695:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:16:28,696:INFO: Epoch 51/100
+2023-08-18 13:16:28,696:INFO: Learning Rate 0.001
+2023-08-18 13:16:38,430:INFO: - Train loss : 0.001
+2023-08-18 13:16:41,784:INFO: - Eval metrics : acc: 36.491 ; loss: 4.930
+2023-08-18 13:16:41,860:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:16:41,860:INFO: Epoch 52/100
+2023-08-18 13:16:41,861:INFO: Learning Rate 0.001
+2023-08-18 13:16:52,420:INFO: - Train loss : 0.001
+2023-08-18 13:16:54,810:INFO: - Eval metrics : acc: 36.303 ; loss: 4.974
+2023-08-18 13:16:54,882:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:16:54,883:INFO: Epoch 53/100
+2023-08-18 13:16:54,883:INFO: Learning Rate 0.001
+2023-08-18 13:17:04,340:INFO: - Train loss : 0.001
+2023-08-18 13:17:06,782:INFO: - Eval metrics : acc: 36.264 ; loss: 5.019
+2023-08-18 13:17:06,857:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:17:06,858:INFO: Epoch 54/100
+2023-08-18 13:17:06,858:INFO: Learning Rate 0.001
+2023-08-18 13:17:16,770:INFO: - Train loss : 0.000
+2023-08-18 13:17:19,691:INFO: - Eval metrics : acc: 35.957 ; loss: 5.122
+2023-08-18 13:17:19,794:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:17:19,794:INFO: Epoch 55/100
+2023-08-18 13:17:19,794:INFO: Learning Rate 0.001
+2023-08-18 13:17:29,153:INFO: - Train loss : 0.000
+2023-08-18 13:17:32,119:INFO: - Eval metrics : acc: 36.274 ; loss: 5.235
+2023-08-18 13:17:32,213:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:17:32,213:INFO: Epoch 56/100
+2023-08-18 13:17:32,214:INFO: Learning Rate 0.001
+2023-08-18 13:17:42,891:INFO: - Train loss : 0.000
+2023-08-18 13:17:45,275:INFO: - Eval metrics : acc: 36.303 ; loss: 5.284
+2023-08-18 13:17:45,360:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:17:45,360:INFO: Epoch 57/100
+2023-08-18 13:17:45,361:INFO: Learning Rate 0.001
+2023-08-18 13:17:54,842:INFO: - Train loss : 0.000
+2023-08-18 13:17:57,226:INFO: - Eval metrics : acc: 36.096 ; loss: 5.384
+2023-08-18 13:17:57,305:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:17:57,306:INFO: Epoch 58/100
+2023-08-18 13:17:57,306:INFO: Learning Rate 0.001
+2023-08-18 13:18:05,592:INFO: - Train loss : 0.000
+2023-08-18 13:18:08,454:INFO: - Eval metrics : acc: 36.116 ; loss: 5.487
+2023-08-18 13:18:08,544:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:18:08,545:INFO: Epoch 59/100
+2023-08-18 13:18:08,545:INFO: Learning Rate 0.001
+2023-08-18 13:18:17,476:INFO: - Train loss : 0.000
+2023-08-18 13:18:19,981:INFO: - Eval metrics : acc: 35.700 ; loss: 5.628
+2023-08-18 13:18:20,045:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:18:20,045:INFO: Epoch 60/100
+2023-08-18 13:18:20,046:INFO: Learning Rate 0.001
+2023-08-18 13:18:29,438:INFO: - Train loss : 0.755
+2023-08-18 13:18:31,696:INFO: - Eval metrics : acc: 34.523 ; loss: 3.713
+2023-08-18 13:18:31,769:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:18:31,769:INFO: Epoch 61/100
+2023-08-18 13:18:31,770:INFO: Learning Rate 0.001
+2023-08-18 13:18:40,278:INFO: - Train loss : 0.179
+2023-08-18 13:18:43,956:INFO: - Eval metrics : acc: 35.581 ; loss: 3.800
+2023-08-18 13:18:44,081:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:18:44,081:INFO: Epoch 62/100
+2023-08-18 13:18:44,081:INFO: Learning Rate 0.001
+2023-08-18 13:18:53,415:INFO: - Train loss : 0.035
+2023-08-18 13:18:55,876:INFO: - Eval metrics : acc: 36.452 ; loss: 3.966
+2023-08-18 13:18:55,977:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:18:55,978:INFO: Epoch 63/100
+2023-08-18 13:18:55,979:INFO: Learning Rate 0.001
+2023-08-18 13:19:05,857:INFO: - Train loss : 0.012
+2023-08-18 13:19:09,079:INFO: - Eval metrics : acc: 36.274 ; loss: 4.031
+2023-08-18 13:19:09,158:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:19:09,159:INFO: Epoch 64/100
+2023-08-18 13:19:09,159:INFO: Learning Rate 0.001
+2023-08-18 13:19:18,056:INFO: - Train loss : 0.007
+2023-08-18 13:19:20,570:INFO: - Eval metrics : acc: 36.402 ; loss: 4.148
+2023-08-18 13:19:20,647:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:19:20,648:INFO: Epoch 65/100
+2023-08-18 13:19:20,648:INFO: Learning Rate 0.001
+2023-08-18 13:19:29,814:INFO: - Train loss : 0.005
+2023-08-18 13:19:32,035:INFO: - Eval metrics : acc: 36.630 ; loss: 4.253
+2023-08-18 13:19:32,114:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:19:32,115:INFO: Epoch 66/100
+2023-08-18 13:19:32,116:INFO: Learning Rate 0.001
+2023-08-18 13:19:41,190:INFO: - Train loss : 0.004
+2023-08-18 13:19:43,729:INFO: - Eval metrics : acc: 36.650 ; loss: 4.376
+2023-08-18 13:19:43,808:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:19:43,808:INFO: Epoch 67/100
+2023-08-18 13:19:43,809:INFO: Learning Rate 0.001
+2023-08-18 13:19:53,383:INFO: - Train loss : 0.003
+2023-08-18 13:19:55,708:INFO: - Eval metrics : acc: 36.432 ; loss: 4.433
+2023-08-18 13:19:55,794:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:19:55,795:INFO: Epoch 68/100
+2023-08-18 13:19:55,796:INFO: Learning Rate 0.001
+2023-08-18 13:20:05,239:INFO: - Train loss : 0.003
+2023-08-18 13:20:08,418:INFO: - Eval metrics : acc: 36.600 ; loss: 4.554
+2023-08-18 13:20:08,552:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:20:08,552:INFO: Epoch 69/100
+2023-08-18 13:20:08,552:INFO: Learning Rate 0.001
+2023-08-18 13:20:17,695:INFO: - Train loss : 0.002
+2023-08-18 13:20:20,470:INFO: - Eval metrics : acc: 36.531 ; loss: 4.624
+2023-08-18 13:20:20,561:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:20:20,561:INFO: Epoch 70/100
+2023-08-18 13:20:20,562:INFO: Learning Rate 0.001
+2023-08-18 13:20:29,855:INFO: - Train loss : 0.002
+2023-08-18 13:20:32,890:INFO: - Eval metrics : acc: 36.610 ; loss: 4.703
+2023-08-18 13:20:32,966:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:20:32,967:INFO: Epoch 71/100
+2023-08-18 13:20:32,967:INFO: Learning Rate 0.001
+2023-08-18 13:20:43,409:INFO: - Train loss : 0.001
+2023-08-18 13:20:45,874:INFO: - Eval metrics : acc: 36.392 ; loss: 4.783
+2023-08-18 13:20:45,949:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:20:45,950:INFO: Epoch 72/100
+2023-08-18 13:20:45,950:INFO: Learning Rate 0.001
+2023-08-18 13:20:55,143:INFO: - Train loss : 0.001
+2023-08-18 13:20:57,999:INFO: - Eval metrics : acc: 36.650 ; loss: 4.875
+2023-08-18 13:20:58,091:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:20:58,092:INFO: Epoch 73/100
+2023-08-18 13:20:58,092:INFO: Learning Rate 0.001
+2023-08-18 13:21:07,838:INFO: - Train loss : 0.001
+2023-08-18 13:21:10,432:INFO: - Eval metrics : acc: 36.541 ; loss: 4.937
+2023-08-18 13:21:10,515:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:21:10,515:INFO: Epoch 74/100
+2023-08-18 13:21:10,516:INFO: Learning Rate 0.001
+2023-08-18 13:21:19,632:INFO: - Train loss : 0.001
+2023-08-18 13:21:22,071:INFO: - Eval metrics : acc: 36.353 ; loss: 5.042
+2023-08-18 13:21:22,240:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:21:22,241:INFO: Epoch 75/100
+2023-08-18 13:21:22,241:INFO: Learning Rate 0.001
+2023-08-18 13:21:31,170:INFO: - Train loss : 0.001
+2023-08-18 13:21:33,849:INFO: - Eval metrics : acc: 36.313 ; loss: 5.107
+2023-08-18 13:21:33,994:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:21:33,995:INFO: Epoch 76/100
+2023-08-18 13:21:33,995:INFO: Learning Rate 0.001
+2023-08-18 13:21:43,064:INFO: - Train loss : 0.000
+2023-08-18 13:21:45,729:INFO: - Eval metrics : acc: 35.769 ; loss: 5.221
+2023-08-18 13:21:45,797:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:21:45,798:INFO: Epoch 77/100
+2023-08-18 13:21:45,798:INFO: Learning Rate 0.001
+2023-08-18 13:21:55,137:INFO: - Train loss : 0.000
+2023-08-18 13:21:58,063:INFO: - Eval metrics : acc: 36.264 ; loss: 5.272
+2023-08-18 13:21:58,163:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:21:58,164:INFO: Epoch 78/100
+2023-08-18 13:21:58,164:INFO: Learning Rate 0.001
+2023-08-18 13:22:08,012:INFO: - Train loss : 0.000
+2023-08-18 13:22:11,029:INFO: - Eval metrics : acc: 36.165 ; loss: 5.365
+2023-08-18 13:22:11,110:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:22:11,111:INFO: Epoch 79/100
+2023-08-18 13:22:11,112:INFO: Learning Rate 0.001
+2023-08-18 13:22:19,851:INFO: - Train loss : 0.000
+2023-08-18 13:22:22,540:INFO: - Eval metrics : acc: 36.116 ; loss: 5.445
+2023-08-18 13:22:22,621:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:22:22,622:INFO: Epoch 80/100
+2023-08-18 13:22:22,622:INFO: Learning Rate 0.001
+2023-08-18 13:22:31,999:INFO: - Train loss : 0.000
+2023-08-18 13:22:34,685:INFO: - Eval metrics : acc: 36.017 ; loss: 5.559
+2023-08-18 13:22:34,783:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:22:34,784:INFO: Epoch 81/100
+2023-08-18 13:22:34,784:INFO: Learning Rate 0.001
+2023-08-18 13:22:44,121:INFO: - Train loss : 0.000
+2023-08-18 13:22:45,927:INFO: - Eval metrics : acc: 35.839 ; loss: 5.650
+2023-08-18 13:22:46,021:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:22:46,022:INFO: Epoch 82/100
+2023-08-18 13:22:46,022:INFO: Learning Rate 0.001
+2023-08-18 13:22:55,214:INFO: - Train loss : 0.000
+2023-08-18 13:22:57,585:INFO: - Eval metrics : acc: 35.750 ; loss: 5.709
+2023-08-18 13:22:57,672:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:22:57,673:INFO: Epoch 83/100
+2023-08-18 13:22:57,673:INFO: Learning Rate 0.001
+2023-08-18 13:23:07,370:INFO: - Train loss : 0.000
+2023-08-18 13:23:09,822:INFO: - Eval metrics : acc: 35.631 ; loss: 5.819
+2023-08-18 13:23:09,961:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:23:09,961:INFO: Epoch 84/100
+2023-08-18 13:23:09,962:INFO: Learning Rate 0.001
+2023-08-18 13:23:19,094:INFO: - Train loss : 0.000
+2023-08-18 13:23:21,581:INFO: - Eval metrics : acc: 36.343 ; loss: 5.931
+2023-08-18 13:23:21,661:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:23:21,662:INFO: Epoch 85/100
+2023-08-18 13:23:21,663:INFO: Learning Rate 0.001
+2023-08-18 13:23:30,737:INFO: - Train loss : 0.609
+2023-08-18 13:23:32,932:INFO: - Eval metrics : acc: 35.690 ; loss: 4.057
+2023-08-18 13:23:33,015:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:23:33,015:INFO: Epoch 86/100
+2023-08-18 13:23:33,016:INFO: Learning Rate 0.001
+2023-08-18 13:23:43,002:INFO: - Train loss : 0.173
+2023-08-18 13:23:45,073:INFO: - Eval metrics : acc: 35.305 ; loss: 4.255
+2023-08-18 13:23:45,161:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:23:45,162:INFO: Epoch 87/100
+2023-08-18 13:23:45,162:INFO: Learning Rate 0.001
+2023-08-18 13:23:54,666:INFO: - Train loss : 0.030
+2023-08-18 13:23:57,093:INFO: - Eval metrics : acc: 36.748 ; loss: 4.162
+2023-08-18 13:23:57,166:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:23:57,167:INFO: Epoch 88/100
+2023-08-18 13:23:57,167:INFO: Learning Rate 0.001
+2023-08-18 13:24:06,551:INFO: - Train loss : 0.010
+2023-08-18 13:24:08,595:INFO: - Eval metrics : acc: 36.254 ; loss: 4.309
+2023-08-18 13:24:08,667:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:24:08,668:INFO: Epoch 89/100
+2023-08-18 13:24:08,668:INFO: Learning Rate 0.001
+2023-08-18 13:24:17,736:INFO: - Train loss : 0.006
+2023-08-18 13:24:19,985:INFO: - Eval metrics : acc: 36.363 ; loss: 4.383
+2023-08-18 13:24:20,070:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:24:20,071:INFO: Epoch 90/100
+2023-08-18 13:24:20,072:INFO: Learning Rate 0.001
+2023-08-18 13:24:28,706:INFO: - Train loss : 0.004
+2023-08-18 13:24:31,193:INFO: - Eval metrics : acc: 36.422 ; loss: 4.479
+2023-08-18 13:24:31,299:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:24:31,299:INFO: Epoch 91/100
+2023-08-18 13:24:31,300:INFO: Learning Rate 0.001
+2023-08-18 13:24:41,185:INFO: - Train loss : 0.003
+2023-08-18 13:24:43,291:INFO: - Eval metrics : acc: 36.135 ; loss: 4.556
+2023-08-18 13:24:43,399:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:24:43,399:INFO: Epoch 92/100
+2023-08-18 13:24:43,399:INFO: Learning Rate 0.001
+2023-08-18 13:24:52,563:INFO: - Train loss : 0.002
+2023-08-18 13:24:54,965:INFO: - Eval metrics : acc: 36.254 ; loss: 4.643
+2023-08-18 13:24:55,056:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:24:55,057:INFO: Epoch 93/100
+2023-08-18 13:24:55,058:INFO: Learning Rate 0.001
+2023-08-18 13:25:03,411:INFO: - Train loss : 0.002
+2023-08-18 13:25:05,700:INFO: - Eval metrics : acc: 36.333 ; loss: 4.694
+2023-08-18 13:25:05,790:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:25:05,790:INFO: Epoch 94/100
+2023-08-18 13:25:05,791:INFO: Learning Rate 0.001
+2023-08-18 13:25:15,189:INFO: - Train loss : 0.002
+2023-08-18 13:25:17,121:INFO: - Eval metrics : acc: 36.185 ; loss: 4.768
+2023-08-18 13:25:17,196:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:25:17,197:INFO: Epoch 95/100
+2023-08-18 13:25:17,197:INFO: Learning Rate 0.001
+2023-08-18 13:25:26,925:INFO: - Train loss : 0.001
+2023-08-18 13:25:29,034:INFO: - Eval metrics : acc: 36.175 ; loss: 4.879
+2023-08-18 13:25:29,114:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:25:29,115:INFO: Epoch 96/100
+2023-08-18 13:25:29,115:INFO: Learning Rate 0.001
+2023-08-18 13:25:38,357:INFO: - Train loss : 0.001
+2023-08-18 13:25:40,851:INFO: - Eval metrics : acc: 36.096 ; loss: 4.935
+2023-08-18 13:25:40,971:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:25:40,972:INFO: Epoch 97/100
+2023-08-18 13:25:40,973:INFO: Learning Rate 0.001
+2023-08-18 13:25:50,308:INFO: - Train loss : 0.001
+2023-08-18 13:25:52,637:INFO: - Eval metrics : acc: 36.135 ; loss: 5.009
+2023-08-18 13:25:52,716:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:25:52,716:INFO: Epoch 98/100
+2023-08-18 13:25:52,716:INFO: Learning Rate 0.001
+2023-08-18 13:26:01,332:INFO: - Train loss : 0.001
+2023-08-18 13:26:03,806:INFO: - Eval metrics : acc: 35.967 ; loss: 5.065
+2023-08-18 13:26:03,883:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:26:03,884:INFO: Epoch 99/100
+2023-08-18 13:26:03,884:INFO: Learning Rate 0.001
+2023-08-18 13:26:12,354:INFO: - Train loss : 0.001
+2023-08-18 13:26:14,535:INFO: - Eval metrics : acc: 35.819 ; loss: 5.161
+2023-08-18 13:26:14,616:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:26:14,616:INFO: Epoch 100/100
+2023-08-18 13:26:14,616:INFO: Learning Rate 0.001
+2023-08-18 13:26:24,076:INFO: - Train loss : 0.001
+2023-08-18 13:26:26,483:INFO: - Eval metrics : acc: 35.997 ; loss: 5.203
+2023-08-18 13:26:26,563:INFO: - So far best epoch: 3, best acc: 37.203
+2023-08-18 13:50:36,623:INFO: num_channels:32
+2023-08-18 13:50:36,626:INFO: dropout_rate:0.0
+2023-08-18 13:50:36,627:INFO: schedule:[999]
+2023-08-18 13:50:36,628:INFO: id:test_learnfrom-pertb
+2023-08-18 13:50:36,628:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 13:50:36,629:INFO: gpu_id:[1]
+2023-08-18 13:50:36,630:INFO: model_name:net
+2023-08-18 13:50:36,630:INFO: resume:
+2023-08-18 13:50:36,635:INFO: learning_rate:0.001
+2023-08-18 13:50:36,636:INFO: gamma:0.1
+2023-08-18 13:50:36,636:INFO: batch_size:128
+2023-08-18 13:50:36,637:INFO: num_epochs:100
+2023-08-18 13:50:36,637:INFO: num_workers:4
+2023-08-18 13:50:36,638:INFO: augmentation:0
+2023-08-18 13:50:36,638:INFO: seed:0
+2023-08-18 13:50:36,639:INFO: dataset:cifar10
+2023-08-18 13:50:36,639:INFO: use_posion_data:True
+2023-08-18 13:50:36,639:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.pt
+2023-08-18 13:50:36,640:INFO: cuda:True
+2023-08-18 13:50:37,183:INFO: --use_posion_data!
+2023-08-18 13:50:37,184:INFO: Number of class: 10
+2023-08-18 13:50:37,184:INFO: Create Model --- net
+2023-08-18 13:51:01,457:INFO: num_channels:32
+2023-08-18 13:51:01,458:INFO: dropout_rate:0.0
+2023-08-18 13:51:01,459:INFO: schedule:[999]
+2023-08-18 13:51:01,459:INFO: id:test_learnfrom-pertb
+2023-08-18 13:51:01,460:INFO: save_path:experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb
+2023-08-18 13:51:01,460:INFO: gpu_id:[2]
+2023-08-18 13:51:01,461:INFO: model_name:net
+2023-08-18 13:51:01,461:INFO: resume:
+2023-08-18 13:51:01,462:INFO: learning_rate:0.001
+2023-08-18 13:51:01,462:INFO: gamma:0.1
+2023-08-18 13:51:01,463:INFO: batch_size:128
+2023-08-18 13:51:01,463:INFO: num_epochs:100
+2023-08-18 13:51:01,463:INFO: num_workers:4
+2023-08-18 13:51:01,463:INFO: augmentation:0
+2023-08-18 13:51:01,464:INFO: seed:0
+2023-08-18 13:51:01,464:INFO: dataset:cifar10
+2023-08-18 13:51:01,464:INFO: use_posion_data:True
+2023-08-18 13:51:01,464:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.pt
+2023-08-18 13:51:01,464:INFO: cuda:True
+2023-08-18 13:51:02,329:INFO: --use_posion_data!
+2023-08-18 13:51:02,331:INFO: Number of class: 10
+2023-08-18 13:51:02,332:INFO: Create Model --- net
+2023-08-18 13:51:12,446:INFO: - Train from scratch 
+2023-08-18 13:51:12,448:INFO: Optimizer: Adam
+2023-08-18 13:51:12,449:INFO: Epoch 1/100
+2023-08-18 13:51:12,450:INFO: Learning Rate 0.001
+2023-08-18 13:51:23,329:INFO: - Train loss : 1.156
+2023-08-18 13:51:25,420:INFO: - Eval metrics : acc: 65.279 ; loss: 0.977
+2023-08-18 13:51:25,562:INFO: - New best model 
+2023-08-18 13:51:25,677:INFO: - So far best epoch: 1, best acc: 65.279
+2023-08-18 13:51:25,679:INFO: Epoch 2/100
+2023-08-18 13:51:25,680:INFO: Learning Rate 0.001
+2023-08-18 13:51:36,285:INFO: - Train loss : 0.801
+2023-08-18 13:51:38,436:INFO: - Eval metrics : acc: 69.017 ; loss: 0.898
+2023-08-18 13:51:38,510:INFO: - New best model 
+2023-08-18 13:51:38,593:INFO: - So far best epoch: 2, best acc: 69.017
+2023-08-18 13:51:38,593:INFO: Epoch 3/100
+2023-08-18 13:51:38,593:INFO: Learning Rate 0.001
+2023-08-18 13:51:48,243:INFO: - Train loss : 0.647
+2023-08-18 13:51:50,529:INFO: - Eval metrics : acc: 71.835 ; loss: 0.833
+2023-08-18 13:51:50,600:INFO: - New best model 
+2023-08-18 13:51:50,665:INFO: - So far best epoch: 3, best acc: 71.835
+2023-08-18 13:51:50,666:INFO: Epoch 4/100
+2023-08-18 13:51:50,666:INFO: Learning Rate 0.001
+2023-08-18 13:51:59,728:INFO: - Train loss : 0.524
+2023-08-18 13:52:02,510:INFO: - Eval metrics : acc: 67.267 ; loss: 0.956
+2023-08-18 13:52:02,591:INFO: - So far best epoch: 3, best acc: 71.835
+2023-08-18 13:52:02,592:INFO: Epoch 5/100
+2023-08-18 13:52:02,592:INFO: Learning Rate 0.001
+2023-08-18 13:52:12,010:INFO: - Train loss : 0.423
+2023-08-18 13:52:14,196:INFO: - Eval metrics : acc: 73.981 ; loss: 0.777
+2023-08-18 13:52:14,274:INFO: - New best model 
+2023-08-18 13:52:14,375:INFO: - So far best epoch: 5, best acc: 73.981
+2023-08-18 13:52:14,376:INFO: Epoch 6/100
+2023-08-18 13:52:14,376:INFO: Learning Rate 0.001
+2023-08-18 13:52:22,878:INFO: - Train loss : 0.329
+2023-08-18 13:52:25,436:INFO: - Eval metrics : acc: 72.004 ; loss: 0.897
+2023-08-18 13:52:25,516:INFO: - So far best epoch: 5, best acc: 73.981
+2023-08-18 13:52:25,517:INFO: Epoch 7/100
+2023-08-18 13:52:25,517:INFO: Learning Rate 0.001
+2023-08-18 13:52:34,193:INFO: - Train loss : 0.251
+2023-08-18 13:52:36,956:INFO: - Eval metrics : acc: 71.420 ; loss: 0.922
+2023-08-18 13:52:37,040:INFO: - So far best epoch: 5, best acc: 73.981
+2023-08-18 13:52:37,040:INFO: Epoch 8/100
+2023-08-18 13:52:37,041:INFO: Learning Rate 0.001
+2023-08-18 13:52:45,778:INFO: - Train loss : 0.190
+2023-08-18 13:52:48,445:INFO: - Eval metrics : acc: 74.753 ; loss: 0.868
+2023-08-18 13:52:48,541:INFO: - New best model 
+2023-08-18 13:52:48,634:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:52:48,635:INFO: Epoch 9/100
+2023-08-18 13:52:48,635:INFO: Learning Rate 0.001
+2023-08-18 13:52:58,241:INFO: - Train loss : 0.139
+2023-08-18 13:53:00,685:INFO: - Eval metrics : acc: 74.357 ; loss: 0.908
+2023-08-18 13:53:00,781:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:53:00,781:INFO: Epoch 10/100
+2023-08-18 13:53:00,781:INFO: Learning Rate 0.001
+2023-08-18 13:53:09,294:INFO: - Train loss : 0.107
+2023-08-18 13:53:11,541:INFO: - Eval metrics : acc: 72.290 ; loss: 1.066
+2023-08-18 13:53:11,619:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:53:11,620:INFO: Epoch 11/100
+2023-08-18 13:53:11,620:INFO: Learning Rate 0.001
+2023-08-18 13:53:20,207:INFO: - Train loss : 0.089
+2023-08-18 13:53:23,220:INFO: - Eval metrics : acc: 71.717 ; loss: 1.131
+2023-08-18 13:53:23,303:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:53:23,303:INFO: Epoch 12/100
+2023-08-18 13:53:23,303:INFO: Learning Rate 0.001
+2023-08-18 13:53:32,090:INFO: - Train loss : 0.077
+2023-08-18 13:53:34,591:INFO: - Eval metrics : acc: 69.215 ; loss: 1.293
+2023-08-18 13:53:34,662:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:53:34,662:INFO: Epoch 13/100
+2023-08-18 13:53:34,663:INFO: Learning Rate 0.001
+2023-08-18 13:53:43,052:INFO: - Train loss : 0.081
+2023-08-18 13:53:45,209:INFO: - Eval metrics : acc: 73.447 ; loss: 1.134
+2023-08-18 13:53:45,293:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:53:45,293:INFO: Epoch 14/100
+2023-08-18 13:53:45,294:INFO: Learning Rate 0.001
+2023-08-18 13:53:53,579:INFO: - Train loss : 0.064
+2023-08-18 13:53:55,920:INFO: - Eval metrics : acc: 72.627 ; loss: 1.161
+2023-08-18 13:53:56,010:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:53:56,010:INFO: Epoch 15/100
+2023-08-18 13:53:56,011:INFO: Learning Rate 0.001
+2023-08-18 13:54:06,625:INFO: - Train loss : 0.057
+2023-08-18 13:54:08,623:INFO: - Eval metrics : acc: 73.803 ; loss: 1.164
+2023-08-18 13:54:08,725:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:54:08,725:INFO: Epoch 16/100
+2023-08-18 13:54:08,725:INFO: Learning Rate 0.001
+2023-08-18 13:54:18,053:INFO: - Train loss : 0.053
+2023-08-18 13:54:21,151:INFO: - Eval metrics : acc: 72.399 ; loss: 1.259
+2023-08-18 13:54:21,233:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:54:21,234:INFO: Epoch 17/100
+2023-08-18 13:54:21,234:INFO: Learning Rate 0.001
+2023-08-18 13:54:29,239:INFO: - Train loss : 0.047
+2023-08-18 13:54:31,925:INFO: - Eval metrics : acc: 73.655 ; loss: 1.227
+2023-08-18 13:54:32,019:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:54:32,020:INFO: Epoch 18/100
+2023-08-18 13:54:32,020:INFO: Learning Rate 0.001
+2023-08-18 13:54:40,487:INFO: - Train loss : 0.052
+2023-08-18 13:54:43,417:INFO: - Eval metrics : acc: 73.803 ; loss: 1.300
+2023-08-18 13:54:43,493:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:54:43,494:INFO: Epoch 19/100
+2023-08-18 13:54:43,495:INFO: Learning Rate 0.001
+2023-08-18 13:54:51,710:INFO: - Train loss : 0.049
+2023-08-18 13:54:53,816:INFO: - Eval metrics : acc: 74.486 ; loss: 1.223
+2023-08-18 13:54:53,903:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:54:53,904:INFO: Epoch 20/100
+2023-08-18 13:54:53,904:INFO: Learning Rate 0.001
+2023-08-18 13:55:02,526:INFO: - Train loss : 0.041
+2023-08-18 13:55:05,087:INFO: - Eval metrics : acc: 70.639 ; loss: 1.538
+2023-08-18 13:55:05,170:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:55:05,171:INFO: Epoch 21/100
+2023-08-18 13:55:05,172:INFO: Learning Rate 0.001
+2023-08-18 13:55:13,429:INFO: - Train loss : 0.029
+2023-08-18 13:55:16,169:INFO: - Eval metrics : acc: 74.555 ; loss: 1.272
+2023-08-18 13:55:16,240:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:55:16,241:INFO: Epoch 22/100
+2023-08-18 13:55:16,241:INFO: Learning Rate 0.001
+2023-08-18 13:55:24,475:INFO: - Train loss : 0.038
+2023-08-18 13:55:27,298:INFO: - Eval metrics : acc: 73.705 ; loss: 1.318
+2023-08-18 13:55:27,379:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:55:27,380:INFO: Epoch 23/100
+2023-08-18 13:55:27,380:INFO: Learning Rate 0.001
+2023-08-18 13:55:37,473:INFO: - Train loss : 0.052
+2023-08-18 13:55:40,025:INFO: - Eval metrics : acc: 71.044 ; loss: 1.549
+2023-08-18 13:55:40,101:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:55:40,103:INFO: Epoch 24/100
+2023-08-18 13:55:40,103:INFO: Learning Rate 0.001
+2023-08-18 13:55:49,634:INFO: - Train loss : 0.046
+2023-08-18 13:55:52,512:INFO: - Eval metrics : acc: 73.091 ; loss: 1.300
+2023-08-18 13:55:52,587:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:55:52,587:INFO: Epoch 25/100
+2023-08-18 13:55:52,588:INFO: Learning Rate 0.001
+2023-08-18 13:56:01,473:INFO: - Train loss : 0.032
+2023-08-18 13:56:03,976:INFO: - Eval metrics : acc: 74.614 ; loss: 1.325
+2023-08-18 13:56:04,050:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:56:04,051:INFO: Epoch 26/100
+2023-08-18 13:56:04,051:INFO: Learning Rate 0.001
+2023-08-18 13:56:12,648:INFO: - Train loss : 0.026
+2023-08-18 13:56:15,067:INFO: - Eval metrics : acc: 73.596 ; loss: 1.430
+2023-08-18 13:56:15,152:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:56:15,152:INFO: Epoch 27/100
+2023-08-18 13:56:15,153:INFO: Learning Rate 0.001
+2023-08-18 13:56:24,148:INFO: - Train loss : 0.028
+2023-08-18 13:56:26,370:INFO: - Eval metrics : acc: 71.687 ; loss: 1.591
+2023-08-18 13:56:26,482:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:56:26,483:INFO: Epoch 28/100
+2023-08-18 13:56:26,483:INFO: Learning Rate 0.001
+2023-08-18 13:56:35,007:INFO: - Train loss : 0.035
+2023-08-18 13:56:37,053:INFO: - Eval metrics : acc: 72.963 ; loss: 1.522
+2023-08-18 13:56:37,138:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:56:37,139:INFO: Epoch 29/100
+2023-08-18 13:56:37,139:INFO: Learning Rate 0.001
+2023-08-18 13:56:47,801:INFO: - Train loss : 0.033
+2023-08-18 13:56:50,679:INFO: - Eval metrics : acc: 69.482 ; loss: 1.712
+2023-08-18 13:56:50,794:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:56:50,795:INFO: Epoch 30/100
+2023-08-18 13:56:50,795:INFO: Learning Rate 0.001
+2023-08-18 13:57:00,623:INFO: - Train loss : 0.034
+2023-08-18 13:57:03,180:INFO: - Eval metrics : acc: 70.926 ; loss: 1.752
+2023-08-18 13:57:03,256:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:57:03,256:INFO: Epoch 31/100
+2023-08-18 13:57:03,257:INFO: Learning Rate 0.001
+2023-08-18 13:57:12,242:INFO: - Train loss : 0.033
+2023-08-18 13:57:14,881:INFO: - Eval metrics : acc: 74.565 ; loss: 1.393
+2023-08-18 13:57:14,955:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:57:14,956:INFO: Epoch 32/100
+2023-08-18 13:57:14,956:INFO: Learning Rate 0.001
+2023-08-18 13:57:23,356:INFO: - Train loss : 0.023
+2023-08-18 13:57:25,578:INFO: - Eval metrics : acc: 73.447 ; loss: 1.530
+2023-08-18 13:57:25,651:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:57:25,651:INFO: Epoch 33/100
+2023-08-18 13:57:25,652:INFO: Learning Rate 0.001
+2023-08-18 13:57:35,037:INFO: - Train loss : 0.016
+2023-08-18 13:57:38,364:INFO: - Eval metrics : acc: 74.713 ; loss: 1.416
+2023-08-18 13:57:38,444:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:57:38,445:INFO: Epoch 34/100
+2023-08-18 13:57:38,445:INFO: Learning Rate 0.001
+2023-08-18 13:57:46,952:INFO: - Train loss : 0.015
+2023-08-18 13:57:49,576:INFO: - Eval metrics : acc: 73.408 ; loss: 1.605
+2023-08-18 13:57:49,664:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:57:49,665:INFO: Epoch 35/100
+2023-08-18 13:57:49,666:INFO: Learning Rate 0.001
+2023-08-18 13:57:57,941:INFO: - Train loss : 0.030
+2023-08-18 13:58:00,491:INFO: - Eval metrics : acc: 72.458 ; loss: 1.577
+2023-08-18 13:58:00,565:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:58:00,566:INFO: Epoch 36/100
+2023-08-18 13:58:00,566:INFO: Learning Rate 0.001
+2023-08-18 13:58:09,462:INFO: - Train loss : 0.049
+2023-08-18 13:58:11,989:INFO: - Eval metrics : acc: 71.835 ; loss: 1.730
+2023-08-18 13:58:12,134:INFO: - So far best epoch: 8, best acc: 74.753
+2023-08-18 13:58:12,135:INFO: Epoch 37/100
+2023-08-18 13:58:12,135:INFO: Learning Rate 0.001
+2023-08-18 13:58:21,610:INFO: - Train loss : 0.029
+2023-08-18 13:58:24,163:INFO: - Eval metrics : acc: 75.514 ; loss: 1.408
+2023-08-18 13:58:24,232:INFO: - New best model 
+2023-08-18 13:58:24,301:INFO: - So far best epoch: 37, best acc: 75.514
+2023-08-18 13:58:24,301:INFO: Epoch 38/100
+2023-08-18 13:58:24,301:INFO: Learning Rate 0.001
+2023-08-18 13:58:33,627:INFO: - Train loss : 0.019
+2023-08-18 13:58:36,290:INFO: - Eval metrics : acc: 75.880 ; loss: 1.392
+2023-08-18 13:58:36,409:INFO: - New best model 
+2023-08-18 13:58:36,498:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:58:36,499:INFO: Epoch 39/100
+2023-08-18 13:58:36,499:INFO: Learning Rate 0.001
+2023-08-18 13:58:44,961:INFO: - Train loss : 0.012
+2023-08-18 13:58:48,047:INFO: - Eval metrics : acc: 75.020 ; loss: 1.479
+2023-08-18 13:58:48,130:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:58:48,130:INFO: Epoch 40/100
+2023-08-18 13:58:48,131:INFO: Learning Rate 0.001
+2023-08-18 13:58:57,231:INFO: - Train loss : 0.007
+2023-08-18 13:58:59,468:INFO: - Eval metrics : acc: 75.198 ; loss: 1.463
+2023-08-18 13:58:59,551:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:58:59,552:INFO: Epoch 41/100
+2023-08-18 13:58:59,552:INFO: Learning Rate 0.001
+2023-08-18 13:59:07,633:INFO: - Train loss : 0.009
+2023-08-18 13:59:09,908:INFO: - Eval metrics : acc: 74.367 ; loss: 1.546
+2023-08-18 13:59:10,058:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:59:10,058:INFO: Epoch 42/100
+2023-08-18 13:59:10,058:INFO: Learning Rate 0.001
+2023-08-18 13:59:19,949:INFO: - Train loss : 0.050
+2023-08-18 13:59:22,373:INFO: - Eval metrics : acc: 73.517 ; loss: 1.646
+2023-08-18 13:59:22,505:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:59:22,506:INFO: Epoch 43/100
+2023-08-18 13:59:22,506:INFO: Learning Rate 0.001
+2023-08-18 13:59:32,005:INFO: - Train loss : 0.040
+2023-08-18 13:59:34,694:INFO: - Eval metrics : acc: 74.575 ; loss: 1.479
+2023-08-18 13:59:34,773:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:59:34,773:INFO: Epoch 44/100
+2023-08-18 13:59:34,774:INFO: Learning Rate 0.001
+2023-08-18 13:59:43,578:INFO: - Train loss : 0.020
+2023-08-18 13:59:45,855:INFO: - Eval metrics : acc: 75.138 ; loss: 1.443
+2023-08-18 13:59:45,939:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:59:45,940:INFO: Epoch 45/100
+2023-08-18 13:59:45,941:INFO: Learning Rate 0.001
+2023-08-18 13:59:54,965:INFO: - Train loss : 0.009
+2023-08-18 13:59:57,405:INFO: - Eval metrics : acc: 75.761 ; loss: 1.435
+2023-08-18 13:59:57,495:INFO: - So far best epoch: 38, best acc: 75.880
+2023-08-18 13:59:57,496:INFO: Epoch 46/100
+2023-08-18 13:59:57,496:INFO: Learning Rate 0.001
+2023-08-18 14:00:07,084:INFO: - Train loss : 0.003
+2023-08-18 14:00:09,455:INFO: - Eval metrics : acc: 76.236 ; loss: 1.439
+2023-08-18 14:00:09,537:INFO: - New best model 
+2023-08-18 14:00:09,607:INFO: - So far best epoch: 46, best acc: 76.236
+2023-08-18 14:00:09,608:INFO: Epoch 47/100
+2023-08-18 14:00:09,608:INFO: Learning Rate 0.001
+2023-08-18 14:00:18,064:INFO: - Train loss : 0.002
+2023-08-18 14:00:20,866:INFO: - Eval metrics : acc: 76.820 ; loss: 1.408
+2023-08-18 14:00:20,947:INFO: - New best model 
+2023-08-18 14:00:21,015:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:00:21,015:INFO: Epoch 48/100
+2023-08-18 14:00:21,015:INFO: Learning Rate 0.001
+2023-08-18 14:00:30,699:INFO: - Train loss : 0.001
+2023-08-18 14:00:33,095:INFO: - Eval metrics : acc: 76.661 ; loss: 1.417
+2023-08-18 14:00:33,190:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:00:33,190:INFO: Epoch 49/100
+2023-08-18 14:00:33,190:INFO: Learning Rate 0.001
+2023-08-18 14:00:43,746:INFO: - Train loss : 0.001
+2023-08-18 14:00:46,159:INFO: - Eval metrics : acc: 76.246 ; loss: 1.441
+2023-08-18 14:00:46,236:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:00:46,237:INFO: Epoch 50/100
+2023-08-18 14:00:46,237:INFO: Learning Rate 0.001
+2023-08-18 14:00:54,759:INFO: - Train loss : 0.001
+2023-08-18 14:00:57,024:INFO: - Eval metrics : acc: 76.216 ; loss: 1.455
+2023-08-18 14:00:57,103:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:00:57,104:INFO: Epoch 51/100
+2023-08-18 14:00:57,104:INFO: Learning Rate 0.001
+2023-08-18 14:01:06,261:INFO: - Train loss : 0.001
+2023-08-18 14:01:08,474:INFO: - Eval metrics : acc: 76.652 ; loss: 1.456
+2023-08-18 14:01:08,552:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:01:08,553:INFO: Epoch 52/100
+2023-08-18 14:01:08,553:INFO: Learning Rate 0.001
+2023-08-18 14:01:18,113:INFO: - Train loss : 0.000
+2023-08-18 14:01:20,715:INFO: - Eval metrics : acc: 76.760 ; loss: 1.450
+2023-08-18 14:01:20,790:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:01:20,791:INFO: Epoch 53/100
+2023-08-18 14:01:20,791:INFO: Learning Rate 0.001
+2023-08-18 14:01:28,904:INFO: - Train loss : 0.000
+2023-08-18 14:01:31,447:INFO: - Eval metrics : acc: 76.572 ; loss: 1.459
+2023-08-18 14:01:31,528:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:01:31,528:INFO: Epoch 54/100
+2023-08-18 14:01:31,528:INFO: Learning Rate 0.001
+2023-08-18 14:01:40,840:INFO: - Train loss : 0.000
+2023-08-18 14:01:43,045:INFO: - Eval metrics : acc: 76.671 ; loss: 1.481
+2023-08-18 14:01:43,215:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:01:43,215:INFO: Epoch 55/100
+2023-08-18 14:01:43,215:INFO: Learning Rate 0.001
+2023-08-18 14:01:53,226:INFO: - Train loss : 0.178
+2023-08-18 14:01:55,582:INFO: - Eval metrics : acc: 71.687 ; loss: 1.542
+2023-08-18 14:01:55,678:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:01:55,678:INFO: Epoch 56/100
+2023-08-18 14:01:55,679:INFO: Learning Rate 0.001
+2023-08-18 14:02:05,025:INFO: - Train loss : 0.055
+2023-08-18 14:02:07,514:INFO: - Eval metrics : acc: 74.496 ; loss: 1.365
+2023-08-18 14:02:07,650:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:02:07,650:INFO: Epoch 57/100
+2023-08-18 14:02:07,651:INFO: Learning Rate 0.001
+2023-08-18 14:02:16,835:INFO: - Train loss : 0.014
+2023-08-18 14:02:19,245:INFO: - Eval metrics : acc: 76.098 ; loss: 1.319
+2023-08-18 14:02:19,321:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:02:19,323:INFO: Epoch 58/100
+2023-08-18 14:02:19,324:INFO: Learning Rate 0.001
+2023-08-18 14:02:28,230:INFO: - Train loss : 0.006
+2023-08-18 14:02:30,878:INFO: - Eval metrics : acc: 76.404 ; loss: 1.310
+2023-08-18 14:02:30,967:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:02:30,967:INFO: Epoch 59/100
+2023-08-18 14:02:30,968:INFO: Learning Rate 0.001
+2023-08-18 14:02:38,555:INFO: - Train loss : 0.003
+2023-08-18 14:02:40,874:INFO: - Eval metrics : acc: 76.394 ; loss: 1.332
+2023-08-18 14:02:40,956:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:02:40,956:INFO: Epoch 60/100
+2023-08-18 14:02:40,957:INFO: Learning Rate 0.001
+2023-08-18 14:02:50,675:INFO: - Train loss : 0.002
+2023-08-18 14:02:53,529:INFO: - Eval metrics : acc: 76.642 ; loss: 1.348
+2023-08-18 14:02:53,639:INFO: - So far best epoch: 47, best acc: 76.820
+2023-08-18 14:02:53,640:INFO: Epoch 61/100
+2023-08-18 14:02:53,640:INFO: Learning Rate 0.001
+2023-08-18 14:03:02,648:INFO: - Train loss : 0.001
+2023-08-18 14:03:06,259:INFO: - Eval metrics : acc: 77.047 ; loss: 1.351
+2023-08-18 14:03:06,348:INFO: - New best model 
+2023-08-18 14:03:06,425:INFO: - So far best epoch: 61, best acc: 77.047
+2023-08-18 14:03:06,425:INFO: Epoch 62/100
+2023-08-18 14:03:06,425:INFO: Learning Rate 0.001
+2023-08-18 14:03:15,821:INFO: - Train loss : 0.001
+2023-08-18 14:03:18,210:INFO: - Eval metrics : acc: 77.087 ; loss: 1.342
+2023-08-18 14:03:18,279:INFO: - New best model 
+2023-08-18 14:03:18,357:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:03:18,357:INFO: Epoch 63/100
+2023-08-18 14:03:18,357:INFO: Learning Rate 0.001
+2023-08-18 14:03:27,128:INFO: - Train loss : 0.001
+2023-08-18 14:03:29,955:INFO: - Eval metrics : acc: 76.830 ; loss: 1.374
+2023-08-18 14:03:30,030:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:03:30,030:INFO: Epoch 64/100
+2023-08-18 14:03:30,030:INFO: Learning Rate 0.001
+2023-08-18 14:03:38,767:INFO: - Train loss : 0.001
+2023-08-18 14:03:41,102:INFO: - Eval metrics : acc: 76.652 ; loss: 1.373
+2023-08-18 14:03:41,179:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:03:41,179:INFO: Epoch 65/100
+2023-08-18 14:03:41,179:INFO: Learning Rate 0.001
+2023-08-18 14:03:49,950:INFO: - Train loss : 0.001
+2023-08-18 14:03:52,206:INFO: - Eval metrics : acc: 76.849 ; loss: 1.391
+2023-08-18 14:03:52,282:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:03:52,282:INFO: Epoch 66/100
+2023-08-18 14:03:52,283:INFO: Learning Rate 0.001
+2023-08-18 14:04:00,982:INFO: - Train loss : 0.000
+2023-08-18 14:04:04,281:INFO: - Eval metrics : acc: 77.057 ; loss: 1.406
+2023-08-18 14:04:04,381:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:04:04,382:INFO: Epoch 67/100
+2023-08-18 14:04:04,382:INFO: Learning Rate 0.001
+2023-08-18 14:04:14,625:INFO: - Train loss : 0.011
+2023-08-18 14:04:17,667:INFO: - Eval metrics : acc: 62.312 ; loss: 2.943
+2023-08-18 14:04:17,738:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:04:17,738:INFO: Epoch 68/100
+2023-08-18 14:04:17,738:INFO: Learning Rate 0.001
+2023-08-18 14:04:25,836:INFO: - Train loss : 0.162
+2023-08-18 14:04:28,123:INFO: - Eval metrics : acc: 74.367 ; loss: 1.430
+2023-08-18 14:04:28,199:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:04:28,200:INFO: Epoch 69/100
+2023-08-18 14:04:28,200:INFO: Learning Rate 0.001
+2023-08-18 14:04:36,651:INFO: - Train loss : 0.021
+2023-08-18 14:04:39,411:INFO: - Eval metrics : acc: 75.445 ; loss: 1.320
+2023-08-18 14:04:39,493:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:04:39,494:INFO: Epoch 70/100
+2023-08-18 14:04:39,494:INFO: Learning Rate 0.001
+2023-08-18 14:04:48,914:INFO: - Train loss : 0.007
+2023-08-18 14:04:51,619:INFO: - Eval metrics : acc: 75.712 ; loss: 1.345
+2023-08-18 14:04:51,689:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:04:51,690:INFO: Epoch 71/100
+2023-08-18 14:04:51,691:INFO: Learning Rate 0.001
+2023-08-18 14:04:59,587:INFO: - Train loss : 0.003
+2023-08-18 14:05:02,112:INFO: - Eval metrics : acc: 75.979 ; loss: 1.329
+2023-08-18 14:05:02,188:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:05:02,188:INFO: Epoch 72/100
+2023-08-18 14:05:02,188:INFO: Learning Rate 0.001
+2023-08-18 14:05:10,953:INFO: - Train loss : 0.002
+2023-08-18 14:05:13,616:INFO: - Eval metrics : acc: 75.682 ; loss: 1.349
+2023-08-18 14:05:13,736:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:05:13,736:INFO: Epoch 73/100
+2023-08-18 14:05:13,736:INFO: Learning Rate 0.001
+2023-08-18 14:05:22,598:INFO: - Train loss : 0.001
+2023-08-18 14:05:25,304:INFO: - Eval metrics : acc: 75.969 ; loss: 1.349
+2023-08-18 14:05:25,377:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:05:25,377:INFO: Epoch 74/100
+2023-08-18 14:05:25,377:INFO: Learning Rate 0.001
+2023-08-18 14:05:34,767:INFO: - Train loss : 0.001
+2023-08-18 14:05:36,935:INFO: - Eval metrics : acc: 76.058 ; loss: 1.368
+2023-08-18 14:05:37,007:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:05:37,008:INFO: Epoch 75/100
+2023-08-18 14:05:37,009:INFO: Learning Rate 0.001
+2023-08-18 14:05:46,091:INFO: - Train loss : 0.001
+2023-08-18 14:05:48,635:INFO: - Eval metrics : acc: 75.959 ; loss: 1.391
+2023-08-18 14:05:48,720:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:05:48,721:INFO: Epoch 76/100
+2023-08-18 14:05:48,722:INFO: Learning Rate 0.001
+2023-08-18 14:05:57,074:INFO: - Train loss : 0.001
+2023-08-18 14:05:59,303:INFO: - Eval metrics : acc: 75.138 ; loss: 1.510
+2023-08-18 14:05:59,376:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:05:59,377:INFO: Epoch 77/100
+2023-08-18 14:05:59,378:INFO: Learning Rate 0.001
+2023-08-18 14:06:07,762:INFO: - Train loss : 0.067
+2023-08-18 14:06:10,162:INFO: - Eval metrics : acc: 71.104 ; loss: 1.650
+2023-08-18 14:06:10,272:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:06:10,273:INFO: Epoch 78/100
+2023-08-18 14:06:10,274:INFO: Learning Rate 0.001
+2023-08-18 14:06:19,492:INFO: - Train loss : 0.047
+2023-08-18 14:06:22,789:INFO: - Eval metrics : acc: 74.842 ; loss: 1.430
+2023-08-18 14:06:22,867:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:06:22,868:INFO: Epoch 79/100
+2023-08-18 14:06:22,868:INFO: Learning Rate 0.001
+2023-08-18 14:06:32,615:INFO: - Train loss : 0.011
+2023-08-18 14:06:35,538:INFO: - Eval metrics : acc: 74.337 ; loss: 1.591
+2023-08-18 14:06:35,616:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:06:35,616:INFO: Epoch 80/100
+2023-08-18 14:06:35,617:INFO: Learning Rate 0.001
+2023-08-18 14:06:45,557:INFO: - Train loss : 0.005
+2023-08-18 14:06:48,165:INFO: - Eval metrics : acc: 75.663 ; loss: 1.405
+2023-08-18 14:06:48,248:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:06:48,249:INFO: Epoch 81/100
+2023-08-18 14:06:48,249:INFO: Learning Rate 0.001
+2023-08-18 14:06:56,558:INFO: - Train loss : 0.003
+2023-08-18 14:06:59,069:INFO: - Eval metrics : acc: 76.226 ; loss: 1.411
+2023-08-18 14:06:59,160:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:06:59,161:INFO: Epoch 82/100
+2023-08-18 14:06:59,161:INFO: Learning Rate 0.001
+2023-08-18 14:07:07,097:INFO: - Train loss : 0.002
+2023-08-18 14:07:10,011:INFO: - Eval metrics : acc: 76.117 ; loss: 1.436
+2023-08-18 14:07:10,110:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:07:10,111:INFO: Epoch 83/100
+2023-08-18 14:07:10,111:INFO: Learning Rate 0.001
+2023-08-18 14:07:18,589:INFO: - Train loss : 0.002
+2023-08-18 14:07:20,953:INFO: - Eval metrics : acc: 76.177 ; loss: 1.441
+2023-08-18 14:07:21,028:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:07:21,029:INFO: Epoch 84/100
+2023-08-18 14:07:21,029:INFO: Learning Rate 0.001
+2023-08-18 14:07:29,777:INFO: - Train loss : 0.001
+2023-08-18 14:07:31,972:INFO: - Eval metrics : acc: 76.147 ; loss: 1.439
+2023-08-18 14:07:32,075:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:07:32,075:INFO: Epoch 85/100
+2023-08-18 14:07:32,076:INFO: Learning Rate 0.001
+2023-08-18 14:07:41,305:INFO: - Train loss : 0.002
+2023-08-18 14:07:44,440:INFO: - Eval metrics : acc: 72.518 ; loss: 1.845
+2023-08-18 14:07:44,521:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:07:44,522:INFO: Epoch 86/100
+2023-08-18 14:07:44,522:INFO: Learning Rate 0.001
+2023-08-18 14:07:52,685:INFO: - Train loss : 0.060
+2023-08-18 14:07:54,652:INFO: - Eval metrics : acc: 73.665 ; loss: 1.673
+2023-08-18 14:07:54,725:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:07:54,725:INFO: Epoch 87/100
+2023-08-18 14:07:54,725:INFO: Learning Rate 0.001
+2023-08-18 14:08:03,448:INFO: - Train loss : 0.026
+2023-08-18 14:08:05,532:INFO: - Eval metrics : acc: 74.555 ; loss: 1.532
+2023-08-18 14:08:05,642:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:08:05,642:INFO: Epoch 88/100
+2023-08-18 14:08:05,643:INFO: Learning Rate 0.001
+2023-08-18 14:08:13,847:INFO: - Train loss : 0.009
+2023-08-18 14:08:16,331:INFO: - Eval metrics : acc: 75.346 ; loss: 1.512
+2023-08-18 14:08:16,404:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:08:16,405:INFO: Epoch 89/100
+2023-08-18 14:08:16,405:INFO: Learning Rate 0.001
+2023-08-18 14:08:25,089:INFO: - Train loss : 0.006
+2023-08-18 14:08:27,035:INFO: - Eval metrics : acc: 75.069 ; loss: 1.535
+2023-08-18 14:08:27,108:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:08:27,109:INFO: Epoch 90/100
+2023-08-18 14:08:27,109:INFO: Learning Rate 0.001
+2023-08-18 14:08:35,406:INFO: - Train loss : 0.003
+2023-08-18 14:08:37,743:INFO: - Eval metrics : acc: 76.108 ; loss: 1.477
+2023-08-18 14:08:37,834:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:08:37,835:INFO: Epoch 91/100
+2023-08-18 14:08:37,836:INFO: Learning Rate 0.001
+2023-08-18 14:08:46,756:INFO: - Train loss : 0.003
+2023-08-18 14:08:48,939:INFO: - Eval metrics : acc: 75.425 ; loss: 1.527
+2023-08-18 14:08:49,046:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:08:49,047:INFO: Epoch 92/100
+2023-08-18 14:08:49,047:INFO: Learning Rate 0.001
+2023-08-18 14:08:58,041:INFO: - Train loss : 0.003
+2023-08-18 14:09:00,441:INFO: - Eval metrics : acc: 75.841 ; loss: 1.513
+2023-08-18 14:09:00,644:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:09:00,645:INFO: Epoch 93/100
+2023-08-18 14:09:00,645:INFO: Learning Rate 0.001
+2023-08-18 14:09:10,045:INFO: - Train loss : 0.002
+2023-08-18 14:09:12,535:INFO: - Eval metrics : acc: 74.881 ; loss: 1.612
+2023-08-18 14:09:12,617:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:09:12,618:INFO: Epoch 94/100
+2023-08-18 14:09:12,618:INFO: Learning Rate 0.001
+2023-08-18 14:09:21,160:INFO: - Train loss : 0.005
+2023-08-18 14:09:23,277:INFO: - Eval metrics : acc: 74.575 ; loss: 1.714
+2023-08-18 14:09:23,395:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:09:23,396:INFO: Epoch 95/100
+2023-08-18 14:09:23,397:INFO: Learning Rate 0.001
+2023-08-18 14:09:32,280:INFO: - Train loss : 0.047
+2023-08-18 14:09:34,550:INFO: - Eval metrics : acc: 72.290 ; loss: 1.785
+2023-08-18 14:09:34,615:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:09:34,616:INFO: Epoch 96/100
+2023-08-18 14:09:34,616:INFO: Learning Rate 0.001
+2023-08-18 14:09:42,842:INFO: - Train loss : 0.025
+2023-08-18 14:09:45,313:INFO: - Eval metrics : acc: 74.397 ; loss: 1.579
+2023-08-18 14:09:45,392:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:09:45,393:INFO: Epoch 97/100
+2023-08-18 14:09:45,393:INFO: Learning Rate 0.001
+2023-08-18 14:09:53,242:INFO: - Train loss : 0.008
+2023-08-18 14:09:55,392:INFO: - Eval metrics : acc: 75.811 ; loss: 1.543
+2023-08-18 14:09:55,467:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:09:55,467:INFO: Epoch 98/100
+2023-08-18 14:09:55,468:INFO: Learning Rate 0.001
+2023-08-18 14:10:04,241:INFO: - Train loss : 0.003
+2023-08-18 14:10:06,978:INFO: - Eval metrics : acc: 76.365 ; loss: 1.509
+2023-08-18 14:10:07,074:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:10:07,075:INFO: Epoch 99/100
+2023-08-18 14:10:07,075:INFO: Learning Rate 0.001
+2023-08-18 14:10:16,210:INFO: - Train loss : 0.001
+2023-08-18 14:10:18,801:INFO: - Eval metrics : acc: 76.473 ; loss: 1.511
+2023-08-18 14:10:18,902:INFO: - So far best epoch: 62, best acc: 77.087
+2023-08-18 14:10:18,903:INFO: Epoch 100/100
+2023-08-18 14:10:18,904:INFO: Learning Rate 0.001
+2023-08-18 14:10:27,081:INFO: - Train loss : 0.001
+2023-08-18 14:10:29,314:INFO: - Eval metrics : acc: 76.464 ; loss: 1.497
+2023-08-18 14:10:29,388:INFO: - So far best epoch: 62, best acc: 77.087

@@ -55,7 +55,14 @@ python -utt train_scratch.py --id=PdataST-eps03-iter20-t1024-sp10_4W --save_path
 
 python -utt train_scratch.py --id=clean_4W --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-clean_4W.npy --gpu_id=1 	(:
 
-python -utt train_scratch.py --id=PdataST-eps03-iter20-t512-NTGA_4W_notrans --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy --gpu_id=2	(TODO: test no full transform NTGA performance drop
+python -utt train_scratch.py --id=PdataST-eps03-iter20-t512-NTGA_4W_notrans --save_path=experiments/CIFAR10/baseline/resnet18_pData --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy --gpu_id=2	(: test no full transform NTGA performance drop
+
+
+-------------------------8.21 test ueraser:
+python -utt train_scratch.py --id=Test_uE-NTGA_4W_notrans --save_path=experiments/CIFAR10/baseline/resnet18_pData_uE --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy --gpu_id=2 	(TODO: test ueraser on NTGA pData
+
+python -utt train_scratch.py --id=Test_uE-clean --save_path=experiments/CIFAR10/baseline/resnet18_pData_uE --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --seed=0 --dataset=cifar10 --gpu_id=1 	(TODO: test ueraser on clean Data
+
 
 -------clean Data：
 python -utt train_scratch.py --id=test_cData_scratch --save_path=experiments/CIFAR10/baseline/resnet18 --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=1 --seed=0 --dataset=cifar10 
@@ -65,7 +72,10 @@ python -utt train_scratch.py --id=test_cData_scratch --save_path=experiments/CIF
 python -utt train_kd.py --save_path=experiments/CIFAR10/kd_pData_resnet18/resnet18
 
 ===================train_scratch_perb.py
-python -utt train_scratch_perb.py --id=test_learnfrom-pertb --save_path=experiments/CIFAR10/baseline/resnet18_pData_test_learnfrom-pertb --model_name=resnet18 --learning_rate=0.1 --gamma=0.1 --batch_size=128 --num_epochs=160 --num_workers=15 --augmentation=0 --seed=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy --gpu_id=1 
+python -utt train_scratch_perb.py --id=test_learnfrom-pertb --save_path=experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb --model_name=net --learning_rate=1e-3 --gamma=0.1 --batch_size=128 --num_epochs=100 --num_workers=4 --augmentation=0 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.pt --gpu_id=1 
+
+python -utt train_scratch_perb.py --id=test_learnfrom-pertb --save_path=experiments/CIFAR10/baseline/resnet18_pData_test_learnfrom-pertb --model_name=net --learning_rate=1e-3 --schedule=[999] --gamma=0.1 --batch_size=128 --num_epochs=100 --num_workers=4 --augmentation=0 --cuda=1 --dataset=cifar10 --use_posion_data --pData_path=/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.npy --gpu_id=1
+
 
 
 

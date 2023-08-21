@@ -146,7 +146,34 @@
             "PYTHONPATH": "${workspaceFolder}/libs/"
         }
       },
-    
+      {
+        "name": "train_scratch_perb.py",
+        "justMyCode": false,
+        "type": "python",
+        "request": "launch",
+        "python": "python",
+        "args": [
+          "--id=debug_test_learnfrom-pertb",
+          "--save_path=experiments/CIFAR10/baseline/cnn_test_learnfrom-pertb",
+          "--model_name=net",
+          "--learning_rate=1e-3",
+          "--gamma=0.1",
+          "--batch_size=128",
+          "--num_epochs=100",
+          "--num_workers=4",
+          "--augmentation=0",
+          "--dataset=cifar10",
+          "--use_posion_data",
+          "--pData_path=/media/zjh/本地磁盘/projects7.12/UCL_contrastive-poisoning/pretrained_poisons/Pdata/x_train_labels_CIFAR10_50000.pt",
+          "--gpu_id=1"
+        ],
+        "program": "train_scratch_perb.py",
+        "console": "integratedTerminal",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/libs/"
+        }
+      },
+      
 
       {
         "name": "train_scratch_pData.py",
@@ -167,14 +194,16 @@
             "--seed=0",
             "--dataset=cifar10",
             "--use_posion_data",
-            "--pData_path=/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy",
-        ],
+            "--pData_path=/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy",
+            "--gpu_id=2",
+          ],
         "program": "train_scratch.py",
         "console": "integratedTerminal",
         "env": {
             "PYTHONPATH": "${workspaceFolder}/libs/"
         }
     },
+
     {
       "name": "train_scratch_cData.py",
       "justMyCode": false,

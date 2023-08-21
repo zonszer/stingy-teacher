@@ -20746,3 +20746,174 @@
 2023-08-17 23:14:53,577:INFO: use_posion_data:False
 2023-08-17 23:14:53,577:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
 2023-08-17 23:14:53,577:INFO: cuda:True
+2023-08-18 13:23:39,360:INFO: schedule:[80, 120]
+2023-08-18 13:23:39,362:INFO: id:debug-testClean1
+2023-08-18 13:23:39,362:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-08-18 13:23:39,362:INFO: gpu_id:[1]
+2023-08-18 13:23:39,363:INFO: model_name:resnet18
+2023-08-18 13:23:39,363:INFO: resume:
+2023-08-18 13:23:39,364:INFO: learning_rate:0.1
+2023-08-18 13:23:39,365:INFO: gamma:0.1
+2023-08-18 13:23:39,367:INFO: batch_size:128
+2023-08-18 13:23:39,369:INFO: num_epochs:160
+2023-08-18 13:23:39,370:INFO: num_workers:15
+2023-08-18 13:23:39,371:INFO: augmentation:0
+2023-08-18 13:23:39,372:INFO: seed:0
+2023-08-18 13:23:39,373:INFO: dataset:cifar10
+2023-08-18 13:23:39,373:INFO: use_posion_data:False
+2023-08-18 13:23:39,373:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
+2023-08-18 13:23:39,374:INFO: cuda:True
+2023-08-18 13:37:07,055:INFO: schedule:[80, 120]
+2023-08-18 13:37:07,057:INFO: id:debug-testClean1
+2023-08-18 13:37:07,058:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-08-18 13:37:07,059:INFO: gpu_id:[1]
+2023-08-18 13:37:07,060:INFO: model_name:resnet18
+2023-08-18 13:37:07,060:INFO: resume:
+2023-08-18 13:37:07,061:INFO: learning_rate:0.1
+2023-08-18 13:37:07,062:INFO: gamma:0.1
+2023-08-18 13:37:07,063:INFO: batch_size:128
+2023-08-18 13:37:07,064:INFO: num_epochs:160
+2023-08-18 13:37:07,065:INFO: num_workers:15
+2023-08-18 13:37:07,065:INFO: augmentation:0
+2023-08-18 13:37:07,066:INFO: seed:0
+2023-08-18 13:37:07,066:INFO: dataset:cifar10
+2023-08-18 13:37:07,067:INFO: use_posion_data:False
+2023-08-18 13:37:07,068:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_original_gen_NT_cleanData.npy
+2023-08-18 13:37:07,069:INFO: cuda:True
+2023-08-21 12:50:06,366:INFO: id:PdataST-eps03-iter20-t512-NTGA_4W_notrans
+2023-08-21 12:50:06,368:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-08-21 12:50:06,368:INFO: gpu_id:[2]
+2023-08-21 12:50:06,369:INFO: model_name:resnet18
+2023-08-21 12:50:06,369:INFO: resume:
+2023-08-21 12:50:06,370:INFO: learning_rate:0.1
+2023-08-21 12:50:06,370:INFO: schedule:[80, 120]
+2023-08-21 12:50:06,370:INFO: gamma:0.1
+2023-08-21 12:50:06,371:INFO: batch_size:128
+2023-08-21 12:50:06,371:INFO: num_epochs:160
+2023-08-21 12:50:06,371:INFO: num_workers:15
+2023-08-21 12:50:06,372:INFO: augmentation:1
+2023-08-21 12:50:06,374:INFO: seed:0
+2023-08-21 12:50:06,374:INFO: dataset:cifar10
+2023-08-21 12:50:06,375:INFO: use_posion_data:True
+2023-08-21 12:50:06,375:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy
+2023-08-21 12:50:06,375:INFO: cuda:True
+2023-08-21 12:50:09,802:INFO: --use_posion_data!
+2023-08-21 12:50:09,803:INFO: Number of class: 10
+2023-08-21 12:50:09,804:INFO: Create Model --- resnet18
+2023-08-21 12:50:22,640:INFO: - Train from scratch 
+2023-08-21 12:50:22,643:INFO: Optimizer: SGD
+2023-08-21 12:50:22,644:INFO: Epoch 1/160
+2023-08-21 12:50:22,645:INFO: Learning Rate 0.1
+2023-08-21 12:52:49,146:INFO: id:test_pData_scratch
+2023-08-21 12:52:49,149:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-08-21 12:52:49,150:INFO: gpu_id:[2]
+2023-08-21 12:52:49,151:INFO: model_name:resnet18
+2023-08-21 12:52:49,151:INFO: resume:
+2023-08-21 12:52:49,152:INFO: learning_rate:0.1
+2023-08-21 12:52:49,153:INFO: schedule:[80, 120]
+2023-08-21 12:52:49,153:INFO: gamma:0.1
+2023-08-21 12:52:49,154:INFO: batch_size:128
+2023-08-21 12:52:49,155:INFO: num_epochs:160
+2023-08-21 12:52:49,156:INFO: num_workers:15
+2023-08-21 12:52:49,157:INFO: augmentation:1
+2023-08-21 12:52:49,158:INFO: seed:0
+2023-08-21 12:52:49,159:INFO: dataset:cifar10
+2023-08-21 12:52:49,160:INFO: use_posion_data:True
+2023-08-21 12:52:49,162:INFO: pData_path:/home/dayong/CV/registration/ZJH/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-test_NT_Pdata-eps09.npy
+2023-08-21 12:52:49,164:INFO: cuda:True
+2023-08-21 12:55:37,468:INFO: id:test_pData_scratch
+2023-08-21 12:55:37,470:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-08-21 12:55:37,471:INFO: gpu_id:[2]
+2023-08-21 12:55:37,471:INFO: model_name:resnet18
+2023-08-21 12:55:37,472:INFO: resume:
+2023-08-21 12:55:37,473:INFO: learning_rate:0.1
+2023-08-21 12:55:37,474:INFO: schedule:[80, 120]
+2023-08-21 12:55:37,474:INFO: gamma:0.1
+2023-08-21 12:55:37,475:INFO: batch_size:128
+2023-08-21 12:55:37,476:INFO: num_epochs:160
+2023-08-21 12:55:37,477:INFO: num_workers:15
+2023-08-21 12:55:37,478:INFO: augmentation:1
+2023-08-21 12:55:37,479:INFO: seed:0
+2023-08-21 12:55:37,479:INFO: dataset:cifar10
+2023-08-21 12:55:37,480:INFO: use_posion_data:True
+2023-08-21 12:55:37,481:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy
+2023-08-21 12:55:37,482:INFO: cuda:True
+2023-08-21 12:55:54,653:INFO: --use_posion_data!
+2023-08-21 12:55:54,654:INFO: Number of class: 10
+2023-08-21 12:55:54,654:INFO: Create Model --- resnet18
+2023-08-21 12:56:06,948:INFO: - Train from scratch 
+2023-08-21 12:56:06,957:INFO: Optimizer: SGD
+2023-08-21 12:56:06,958:INFO: Epoch 1/160
+2023-08-21 12:56:06,959:INFO: Learning Rate 0.1
+2023-08-21 13:02:29,084:INFO: id:PdataST-eps03-iter20-t512-NTGA_4W_notrans
+2023-08-21 13:02:29,086:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-08-21 13:02:29,086:INFO: gpu_id:[2]
+2023-08-21 13:02:29,087:INFO: model_name:resnet18
+2023-08-21 13:02:29,087:INFO: resume:
+2023-08-21 13:02:29,088:INFO: learning_rate:0.1
+2023-08-21 13:02:29,088:INFO: schedule:[80, 120]
+2023-08-21 13:02:29,089:INFO: gamma:0.1
+2023-08-21 13:02:29,089:INFO: batch_size:128
+2023-08-21 13:02:29,089:INFO: num_epochs:160
+2023-08-21 13:02:29,090:INFO: num_workers:15
+2023-08-21 13:02:29,090:INFO: augmentation:1
+2023-08-21 13:02:29,091:INFO: seed:0
+2023-08-21 13:02:29,091:INFO: dataset:cifar10
+2023-08-21 13:02:29,092:INFO: use_posion_data:True
+2023-08-21 13:02:29,092:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy
+2023-08-21 13:02:29,093:INFO: cuda:True
+2023-08-21 13:02:32,101:INFO: --use_posion_data!
+2023-08-21 13:02:32,102:INFO: Number of class: 10
+2023-08-21 13:02:32,102:INFO: Create Model --- resnet18
+2023-08-21 13:02:42,372:INFO: - Train from scratch 
+2023-08-21 13:02:42,377:INFO: Optimizer: SGD
+2023-08-21 13:02:42,379:INFO: Epoch 1/160
+2023-08-21 13:02:42,379:INFO: Learning Rate 0.1
+2023-08-21 13:05:38,021:INFO: id:PdataST-eps03-iter20-t512-NTGA_4W_notrans
+2023-08-21 13:05:38,023:INFO: save_path:experiments/CIFAR10/baseline/resnet18_pData
+2023-08-21 13:05:38,023:INFO: gpu_id:[2]
+2023-08-21 13:05:38,024:INFO: model_name:resnet18
+2023-08-21 13:05:38,024:INFO: resume:
+2023-08-21 13:05:38,025:INFO: learning_rate:0.1
+2023-08-21 13:05:38,025:INFO: schedule:[80, 120]
+2023-08-21 13:05:38,025:INFO: gamma:0.1
+2023-08-21 13:05:38,026:INFO: batch_size:128
+2023-08-21 13:05:38,026:INFO: num_epochs:160
+2023-08-21 13:05:38,028:INFO: num_workers:15
+2023-08-21 13:05:38,029:INFO: augmentation:1
+2023-08-21 13:05:38,030:INFO: seed:0
+2023-08-21 13:05:38,030:INFO: dataset:cifar10
+2023-08-21 13:05:38,031:INFO: use_posion_data:True
+2023-08-21 13:05:38,031:INFO: pData_path:/media/zjh/本地磁盘/projects7.12/ntga/data/cifar10/x_train_cifar10_ntga_fnn_id-PdataST-eps03-iter20-t512-NTGA_4W.npy
+2023-08-21 13:05:38,032:INFO: cuda:True
+2023-08-21 13:05:40,334:INFO: --use_posion_data!
+2023-08-21 13:05:40,338:INFO: Number of class: 10
+2023-08-21 13:05:40,339:INFO: Create Model --- resnet18
+2023-08-21 13:05:53,092:INFO: - Train from scratch 
+2023-08-21 13:05:53,101:INFO: Optimizer: SGD
+2023-08-21 13:05:53,103:INFO: Epoch 1/160
+2023-08-21 13:05:53,104:INFO: Learning Rate 0.1
+2023-08-21 13:06:51,839:INFO: - Train loss : 2.337
+2023-08-21 13:06:58,629:INFO: - Eval metrics : acc: 10.295 ; loss: 3.819
+2023-08-21 13:06:59,740:INFO: - New best model 
+2023-08-21 13:07:01,170:INFO: - So far best epoch: 1, best acc: 10.295
+2023-08-21 13:07:01,171:INFO: Epoch 2/160
+2023-08-21 13:07:01,171:INFO: Learning Rate 0.1
+2023-08-21 13:08:05,827:INFO: - Train loss : 2.036
+2023-08-21 13:08:12,719:INFO: - Eval metrics : acc: 30.508 ; loss: 1.863
+2023-08-21 13:08:14,130:INFO: - New best model 
+2023-08-21 13:08:15,476:INFO: - So far best epoch: 2, best acc: 30.508
+2023-08-21 13:08:15,476:INFO: Epoch 3/160
+2023-08-21 13:08:15,476:INFO: Learning Rate 0.1
+2023-08-21 13:09:12,216:INFO: - Train loss : 1.900
+2023-08-21 13:09:18,301:INFO: - Eval metrics : acc: 37.609 ; loss: 1.677
+2023-08-21 13:09:19,928:INFO: - New best model 
+2023-08-21 13:09:21,433:INFO: - So far best epoch: 3, best acc: 37.609
+2023-08-21 13:09:21,435:INFO: Epoch 4/160
+2023-08-21 13:09:21,436:INFO: Learning Rate 0.1
+2023-08-21 13:10:22,171:INFO: - Train loss : 1.747
+2023-08-21 13:10:28,604:INFO: - Eval metrics : acc: 45.303 ; loss: 1.518
+2023-08-21 13:10:29,727:INFO: - New best model 
+2023-08-21 13:10:31,060:INFO: - So far best epoch: 4, best acc: 45.303
+2023-08-21 13:10:31,061:INFO: Epoch 5/160
+2023-08-21 13:10:31,061:INFO: Learning Rate 0.1

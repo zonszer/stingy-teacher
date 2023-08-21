@@ -13,8 +13,8 @@ import numpy as np
 from utils.utils import RunningAverage, set_logger, Params
 from model import *
 from data_loader import fetch_dataloader
-from cam_Vis import *
-
+# from cam_Vis import *
+from ueraser import adversarial_augmentation_loss
 
 # ************************** parameters **************************
 parser = argparse.ArgumentParser()
@@ -65,10 +65,13 @@ def train_epoch(model, optim, loss_fn, data_loader, args):
                 train_batch = train_batch.cuda()        # (B,3,32,32)
                 labels_batch = labels_batch.cuda()      # (B,)
 
+            #====================start changed here 8,21====================
             # compute model output and loss
-            output_batch = model(train_batch)           # logit without softmax
-            loss = loss_fn(output_batch, labels_batch)
-
+            # output_batch = model(train_batch)           # logit without softmax
+            # loss = loss_fn(output_batch, labels_batch)
+            loss = adversarial_augmentation_loss(model, train_batch, labels_batch, 
+                                                 criterion=loss_fn, repeat=1)
+            #====================start changed here 8,21====================
             optim.zero_grad()
             loss.backward()
             optim.step()

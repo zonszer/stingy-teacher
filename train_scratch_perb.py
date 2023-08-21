@@ -14,7 +14,7 @@ from utils.utils import RunningAverage, set_logger, Params
 from model import *
 from data_loader import fetch_dataloader, fetch_subset_dataloader_
 from cam_Vis import *
-
+from argparse import Namespace
 
 # ************************** parameters **************************
 parser = argparse.ArgumentParser()
@@ -26,7 +26,6 @@ parser.add_argument('--model_name', default='resnet18', type=str, help='model na
 parser.add_argument('--resume', default='', metavar='Name/path', help='path to latest checkpoint (default: none)')
 # Training parameters
 parser.add_argument('--learning_rate', default=0.1, type=float, help='learning rate')
-parser.add_argument('--schedule', default=[80, 120], type=int, nargs='+', help='schedule')
 parser.add_argument('--gamma', default=0.1, type=float, help='gamma')
 parser.add_argument('--batch_size', default=128, type=int, help='batch size')
 parser.add_argument('--num_epochs', default=160, type=int, help='number of epochs')
@@ -168,6 +167,19 @@ def adjust_learning_rate(opt, epoch, lr, args):
     return lr
 
 
+def combine_args(*args):
+    """assert *args have no same keys(attributes)"""
+    args_dict = {}
+    for arg in args:
+        arg_vars = vars(arg)
+        for key in arg_vars:
+            if key in args_dict and args_dict[key] != arg_vars[key]:
+                raise ValueError(f'Duplicate argument key found: {key} for {args_dict[key]} and {arg_vars[key]}')
+            else:
+                args_dict[key] = arg_vars[key]
+    args_all = Namespace(**args_dict)
+    return args_all
+
 if __name__ == "__main__":
     # ************************** set log **************************
     set_logger(os.path.join(args.save_path, 'training.log'))
@@ -176,6 +188,7 @@ if __name__ == "__main__":
     json_path = os.path.join(args.save_path, 'params.json')
     assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
     params = Params(json_path)
+    args = combine_args(params, args)
 
     args.cuda = torch.cuda.is_available() # use GPU if available
     # torch.set_default_dtype(torch.float64)

@@ -60,24 +60,25 @@ class Cifar10Dataset(datasets.CIFAR10):
         return img, target
 
 
-
 class Cifar10Dataset_img(Dataset):
     def __init__(self, x_path=None, y_path=None, 
                  x_data=None, y_data=None,
                  transform=None):
         super().__init__()
-        if x_path != None:
+        if x_path is not None:
             if y_path == None:
                 y_path = generate_path_replace(x_path)
-            try: 
+            if x_path.endswith('.npy'):
                 self.data = np.load(x_path)
                 self.targets = np.load(y_path)
-            except:
+            elif x_path.endswith('.pt'):
                 self.data = torch.load(x_path, map_location="cpu")
                 self.targets = torch.load(y_path, map_location="cpu")
+            else:
+                raise ValueError("x_path should end with .npy or .pt")
             self.transform = transform
             assert self.data.shape[0] == self.targets.shape[0]
-        elif x_data != None and y_data != None:
+        elif x_data is not None and y_data is not None:
             self.data = x_data
             self.targets = y_data
             self.transform = transform
@@ -92,12 +93,12 @@ class Cifar10Dataset_img(Dataset):
         dev_dataset = Cifar10Dataset_img(x_data=data_remain, y_data=targets_remain, 
                                         transform=self.transform)
         return self, dev_dataset
-
     
     def __getitem__(self, index):
         img = self.data[index]
         y = self.targets[index]
-        img = Image.fromarray(img)
+        if img.dtype == np.uint8:        #or use np.issubdtype(img.dtype, np.uint8)
+            img = Image.fromarray(img)
         if self.transform:
             # Converts the data from numpy to torch tensor
             img = self.transform(img)
@@ -121,7 +122,8 @@ def fetch_dataloader(mode='clean_data', params=None):
             transforms.RandomCrop(32, padding=4),
             transforms.RandomHorizontalFlip(),  # randomly flip image horizontally
             transforms.ToTensor(),
-            transforms.Normalize(mean, std)])
+            # transforms.Normalize(mean, std),
+            ])
     # data augmentation can be turned off
     else:
         train_transformer = transforms.Compose([
@@ -131,7 +133,8 @@ def fetch_dataloader(mode='clean_data', params=None):
     # transformer for dev set
     dev_transformer = transforms.Compose([
         transforms.ToTensor(),
-        transforms.Normalize(mean, std)])
+        # transforms.Normalize(mean, std),
+        ])
     if mode == 'clean_data':
         # ************************************************************************************
         if params.dataset == 'cifar10':
@@ -268,25 +271,25 @@ def fetch_subset_dataloader_(mode='clean_data', params=None):
         assert params.dataset == 'cifar10'
         # train_transformer = transforms.Compose([
         #     transforms.Normalize(mean, std)])
-        trainset = Cifar10Dataset_img(x_path=params.pData_path, transform=train_transformer)
+        trainset = Cifar10Dataset_img(x_path=params.pData_path, transform=None)
         trainset, devset = trainset.spilit_dataset(spilit_ratio=0.8)    #dev transform==train transform
 
     if hasattr(params, 'use_entire_dataset'):
         params.batch_size = len(trainset)
 
-    invtransformer = transforms.Compose([
-        transforms.Normalize(
-            mean=tuple(-m / s for m, s in zip(mean, std)),
-            std=tuple(1.0 / s for s in std),
-        ),
-    ])
+    # invtransformer = transforms.Compose([
+    #     transforms.Normalize(
+    #         mean=tuple(-m / s for m, s in zip(mean, std)),
+    #         std=tuple(1.0 / s for s in std),
+    #     ),
+    # ])
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=params.batch_size,
                                               shuffle=True, num_workers=params.num_workers)
 
     devloader = torch.utils.data.DataLoader(devset, batch_size=params.batch_size,
                                             shuffle=False, num_workers=params.num_workers)
-    trainloader.dataset.invtransformer = invtransformer
-    devloader.dataset.invtransformer = invtransformer
+    # trainloader.dataset.invtransformer = invtransformer
+    # devloader.dataset.invtransformer = invtransformer
     return trainloader, devloader
 
 
